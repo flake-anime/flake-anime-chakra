@@ -83,13 +83,13 @@ function MyApp(){
         </Box>
 
 
-        <Center style={{zIndex: "1"}} position="fixed" right="50px" top="115px">
+        <Center style={{zIndex: "1"}} position="absolute" right="50px" top="115px">
             <Box bgGradient="linear(to-b, rgba(23, 26, 31, 0.75), rgba(20, 22, 26, 0.5))" style={{backdropFilter: "blur(1px)"}} width="310px" height="450px" borderRadius="12px">
                 <Box position="absolute">
                     <SimpleGrid columns={2} spacingX="50px" spacingY="300px" marginLeft="30px" marginTop="50px">
                         <Menu>
                             <MenuButton bgColor="#14161A" fontSize="14" color="white" _hover={{ bgColor: "#262a31" }} as={Button} rightIcon={<ChevronDownIcon />}>
-                                Season
+                                All
                             </MenuButton>
                             <MenuList>
                                 <MenuItem>Spring</MenuItem>
@@ -201,13 +201,16 @@ function MyApp(){
 
         </Center>
 
-        <Box right="150px">
+        <Box>
             <Text fontSize="30" top="590px" right="150px" fontWeight="625" color="white" position="absolute">Weekly Top</Text>
-            <WeeklyTopCard name="One Piece" image="https://gogocdn.net/images/anime/One-piece.jpg"/>
+
+            <WeeklyTopCard name="One Piece" image="https://gogocdn.net/images/anime/One-piece.jpg" cardRight="50px" cardTop="660px"/>
+            <WeeklyTopCard name="Sono Bisque Doll wa Koi wo Suru" image="https://cachecow.eu/i/b15363b512267fdb4f30a789bacd97a6.jpg" cardRight="50px" cardTop="770px"/>
+            <WeeklyTopCard name="Naruto Shippuden" image="https://cachecow.eu/i/d7c4f5008a6c3a4f4d354e531939906f.jpg" cardRight="50px" cardTop="880px"/>
         </Box>
 
         <Script>
-            {/* const player = new Plyr("#player"); */}
+            const player = new Plyr("#player");
         </Script>
     </div>
   )
