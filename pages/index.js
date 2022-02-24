@@ -23,19 +23,18 @@ function MyApp(){
       </Box>
 
 
-      <Box marginLeft="10px" boxShadow="xl">
-        <Flex>
-          <Image borderRadius="15px 0px 0px 15px" height="210px" src="https://gogocdn.net/images/anime/One-piece.jpg"/>
+      <Box marginLeft="10px" boxShadow="xl" width="350px">
+        <Flex height="100px ">
+          <Image borderRadius="15px 0px 0px 15px" src="https://gogocdn.net/images/anime/One-piece.jpg"/>
           <Box bg="rgba(31, 34, 38, 0.87)" width="450px" borderRadius="0px 15px 15px 0px">
-            <Text color="#96A7AF" fontSize="28" fontWeight="500" marginLeft="40px" marginTop="20px">One Piece</Text>
-            <Text color="white" fontSize="20px" position="absolute" fontWeight="500" marginLeft="75px" marginTop="75px">7.61</Text>
-            <Text color="#96A7AF" fontSize="20px" position="absolute" fontWeight="500" marginLeft="180px" marginTop="75px">216,649</Text>
+            <Text color="#96A7AF" fontSize="22" fontWeight="500" marginLeft="20px" marginTop="10px">One Piece</Text>
+            <Text color="white" fontSize="18px" position="absolute" fontWeight="500" marginLeft="50px" bottom="138px">7.61</Text>
+            <Text color="#96A7AF" fontSize="18px" position="absolute" fontWeight="500" marginLeft="130px" bottom="138px">216,649</Text>
             
-            <StarIcon color="#FFC542" marginLeft="40px" marginTop="75px" width="28px" height="28px"/>
-            <ViewIcon color="#96A7AF" width="28px" height="28px" marginLeft="75px" marginTop="75px"/>
+            <StarIcon color="#FFC542" marginLeft="20px" bottom="140px" width="22px" height="22px" position="absolute"/>
+            <ViewIcon color="#96A7AF" width="22px" height="22px" marginLeft="100px" bottom="140px" position="absolute"/>
           </Box>
         </Flex>
-
       </Box>
 
     </Center>
