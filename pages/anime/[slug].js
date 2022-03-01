@@ -27,7 +27,7 @@ function MyApp(){
             </Box>
 
             <Box width="600px" top="150px" left="0" right="0" margin="auto" position="absolute" style={{ zIndex: "1" }}>
-                {/* <iframe src="https://aniflake-proxy-server.herokuapp.com/player?anime_id=death-note&eps_number=37"/> */}
+                <iframe width="600px" height="400px" src="https://aniflake-proxy-server.herokuapp.com/player?anime_id=death-note&eps_number=37" allowfullscreen/>
             </Box>
 
             <Script>
