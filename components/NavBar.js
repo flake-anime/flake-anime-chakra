@@ -1,7 +1,6 @@
-import { Box, Image, Text, IconButton, Portal, Input, Button, useControllableProp, useControllableState } from "@chakra-ui/react"
+import { Box, Image, Text, IconButton, Portal, Input, Button, useControllableProp, useControllableState, SimpleGrid } from "@chakra-ui/react"
 import { SearchIcon } from "@chakra-ui/icons"
 import { useRouter } from "next/router"
-import Script from "next/script"
 
 function NavBar(){
     const router = useRouter()
@@ -13,34 +12,40 @@ function NavBar(){
     }
 
     return (
-        <Portal>
-            <Box _hover={{ cursor: "pointer"}}>
-                <IconButton aria-label="search" bgColor="white" color="#0194FF" height="39px" width="39px" top="30px" right="130px" position="fixed" icon={<SearchIcon />} />
-                <Button _hover={{ bg: "#0f9aff"}} bgColor="#0194FF" color="white" size="md" width="94px" height="39px" position="fixed" top="30px" right="30px">
-                    <Text fontSize="14" fontWeight="400">Sign In</Text>
-                </Button>
+        <Box _hover={{ cursor: "pointer"}}>
+            <Button _hover={{ bg: "#f07eb5"}} style={{ transition: "0.2s" }} bgColor="#ED64A6" color="white" size="md" width="94px" height="45px" position="fixed" top="25px" right="30px">
+                <Text fontSize="14" fontWeight="400">Sign In</Text>
+            </Button>
 
-                {/* Logo */}
-                <Image top="30px" left="30px" left="25" height="39px" position="fixed" src="https://i.imgur.com/4r0JdUo.png" onClick={() => document.location.href="/"}/>
-                {/* Home */}
-                <Image top="160px" left="30px" height="15px" position="fixed" src="https://i.imgur.com/4T35GJ5.png"/>
-                {/* Shuffle */}
-                <Image top="210px" left="30px" height="15px" position="fixed" src="https://i.imgur.com/YpAcgzm.png"/>
-                {/* Heart */}
-                <Image top="260px" left="30px" height="15px" position="fixed" src="https://i.imgur.com/wTcnhew.png"/>
-                {/* Message */}
-                <Image top="310px" left="30px" height="15px" position="fixed" src="https://i.imgur.com/50JH9SG.png"/>
-                {/* Bell */}
-                <Image top="360px" left="30px" height="15px" position="fixed" src="https://i.imgur.com/Io9ymdK.png"/>
-                {/* Star */}
-                <Image top="410px" left="30px" height="15px" position="fixed" src="https://i.imgur.com/6rke9dV.png"/>
+            {/* Logo */}
+            <Image top="27px" left="70px" width="35px" position="fixed" src="https://i.imgur.com/GAGPSGW.png" onClick={() => document.location.href="/"}/>
+            
+            {/* Home */}
+            {/* Shuffle */}
+            {/* Heart */}
+            {/* Message */}
+            {/* Bell */}
+            {/* Star */}
 
-                <form onSubmit={search}>
-                    <Input autocomplete="off" id="textbox" name="textbox" style={{ textTransform: "capitalize" }} placeholder="Search For An Anime..." fontSize="14px" _hover={{ bg:"#3b3f44" }} variant="filled" color="white" left="180px" bgColor="rgba(31, 34, 38)" height="39px" position="absolute" top="30px" width="295px"/>
-                    <IconButton type="submit" aria-label="search" bgColor="#0194FF" color="white" height="39px" width="39px" top="30px" left="485px" position="absolute" icon={<SearchIcon />} />
-                </form>
-            </Box>
-        </Portal>
+            <SimpleGrid columns={1} top="40px" spacingY="50px" left="25px" position="fixed">
+                <Image height="15px" src="https://i.imgur.com/4T35GJ5.png"/>
+
+                <Image height="15px" src="https://i.imgur.com/YpAcgzm.png"/>
+
+                <Image height="15px" src="https://i.imgur.com/wTcnhew.png"/>
+                
+                <Image  height="15px" src="https://i.imgur.com/50JH9SG.png"/>
+                
+                <Image height="15px" src="https://i.imgur.com/Io9ymdK.png"/>
+                
+                <Image height="15px" src="https://i.imgur.com/6rke9dV.png"/>
+            </SimpleGrid>
+
+            <form onSubmit={search}>
+                <Input focusBorderColor="#ED64A6" autocomplete="off" id="textbox" name="textbox" style={{ textTransform: "capitalize" }} placeholder="What would you like to watch today?" fontSize="14px" _hover={{ bg:"#3b3f44" }} variant="filled" color="white" left="125px" bgColor="rgba(68, 72, 87, 0.55)" height="45px" width="350px" position="absolute" top="25px" display="inline-block"/>
+                <IconButton _hover={{ bg: "#f07eb5"}} style={{ transition: "0.2s" }} type="submit" aria-label="search" bgColor="#ED64A6" color="white" height="45px" width="45px" top="25px" left="485px" position="absolute" icon={<SearchIcon />} />
+            </form>
+        </Box>
     )
 }
 
