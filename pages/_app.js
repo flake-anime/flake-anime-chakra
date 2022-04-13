@@ -4,7 +4,7 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-        <Component {...pageProps} overflow="hidden" />
+        <Component {...pageProps}/>
     </ChakraProvider>
   )
 }

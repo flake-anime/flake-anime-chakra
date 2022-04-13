@@ -12,13 +12,13 @@ function NavBar(){
     }
 
     return (
-        <Box _hover={{ cursor: "pointer"}}>
+        <Box>
             <Button _hover={{ bg: "#f07eb5"}} style={{ transition: "0.2s" }} bgColor="#ED64A6" color="white" size="md" width="94px" height="45px" position="fixed" top="25px" right="30px">
                 <Text fontSize="14" fontWeight="400">Sign In</Text>
             </Button>
 
             {/* Logo */}
-            <Image top="27px" left="70px" width="35px" position="fixed" src="https://i.imgur.com/GAGPSGW.png" onClick={() => document.location.href="/"}/>
+            <Image _hover={{ cursor: "pointer"}} top="27px" left="70px" width="35px" position="fixed" src="https://i.imgur.com/GAGPSGW.png" onClick={() => document.location.href="/"}/>
             
             {/* Home */}
             {/* Shuffle */}
@@ -28,16 +28,11 @@ function NavBar(){
             {/* Star */}
 
             <SimpleGrid columns={1} top="40px" spacingY="50px" left="25px" position="fixed">
-                <Image height="15px" src="https://i.imgur.com/4T35GJ5.png"/>
-
-                <Image height="15px" src="https://i.imgur.com/YpAcgzm.png"/>
-
-                <Image height="15px" src="https://i.imgur.com/wTcnhew.png"/>
-                
-                <Image  height="15px" src="https://i.imgur.com/50JH9SG.png"/>
-                
-                <Image height="15px" src="https://i.imgur.com/Io9ymdK.png"/>
-                
+                <Image _hover={{ cursor: "pointer"}} height="15px" src="https://i.imgur.com/4T35GJ5.png"/>
+                <Image _hover={{ cursor: "pointer"}} height="15px" src="https://i.imgur.com/YpAcgzm.png"/>
+                <Image _hover={{ cursor: "pointer"}} height="15px" src="https://i.imgur.com/wTcnhew.png"/>
+                <Image _hover={{ cursor: "pointer"}}  height="15px" src="https://i.imgur.com/50JH9SG.png"/>
+                <Image _hover={{ cursor: "pointer"}} height="15px" src="https://i.imgur.com/Io9ymdK.png"/>
                 <Image height="15px" src="https://i.imgur.com/6rke9dV.png"/>
             </SimpleGrid>
 
