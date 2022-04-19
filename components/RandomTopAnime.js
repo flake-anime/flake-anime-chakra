@@ -5,7 +5,7 @@ import { useRouter } from "next/router"
 function RandomTopAnime(){
     return (
         <Box _hover={{ cursor: "pointer"}}>
-            <Box position="fixed" overflow="hidden" _hover={{ background: "#4b4f5f"}} style={{ transition: "0.2s"}} top="95px" left="70px" bg="#343742" width="1100px" height="175px" borderRadius="12px">
+            <Box position="absolute" overflow="hidden" _hover={{ background: "#575c6f"}} style={{ transition: "0.2s"}} top="95px" left="70px" bg="#4b4f5f" width={[600, 700, 850, 1000, 1100]} height="175px" borderRadius="12px">
                 <Text fontWeight="medium" color="#96A7AF" position="absolute" top="15px" left="165px" fontSize="20px">Banish from the Hero's Party</Text>
 
                 <Text color="#96A7AF" position="absolute" top="60px" left="165px" fontSize="14px">

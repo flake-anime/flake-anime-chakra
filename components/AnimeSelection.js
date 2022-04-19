@@ -3,11 +3,12 @@ import React, {useState} from "react";
 import { StarIcon } from "@chakra-ui/icons"
 
 function AnimeSelection({ imgUrl, name, rating }){
-    return (
-        <Box background="#3B3E49" borderRadius="12" width="340px" height="500px" right="45px" top="95px" position="absolute">
+    // return (
+    //     <Box background="#3B3E49" borderRadius="12" width="340px" height="500px" right="45px" top="95px" position="absolute">
             
-        </Box>
-    )
+    //     </Box>
+    // )
+    return false
 }
 
 export default AnimeSelection
