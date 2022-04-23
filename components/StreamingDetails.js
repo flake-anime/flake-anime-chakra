@@ -1,5 +1,4 @@
-import { Box, Icon, Image, Text, IconButton, Portal, Input, Button, useControllableProp, useControllableState, SimpleGrid } from "@chakra-ui/react"
-import { StarIcon, ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons"
+import { Box, Text } from "@chakra-ui/react"
 import { useRouter } from "next/router"
 import { IoFolderOpenSharp } from "react-icons/io5"
 

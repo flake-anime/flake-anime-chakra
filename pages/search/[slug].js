@@ -1,4 +1,4 @@
-import { Box, Center, Image, Text, SimpleGrid, Select, Checkbox, Button, IconButton, Input, Tag, TagLabel, Menu, MenuButton, MenuList, MenuItem, Container } from "@chakra-ui/react"
+import { Box, Center, Text, SimpleGrid } from "@chakra-ui/react"
 import NavBar from "/components/NavBar"
 import RandomTopAnime from "/components/RandomTopAnime"
 import HomeTypeButtons from "/components/HomeTypeButtons"
@@ -11,22 +11,20 @@ function MyApp({ data }){
     const { asPath } = useRouter();
     const searchedAnime = decodeURI(asPath.split("/")[2]).replace(/-/g, " ")
 
-    console.log(animes);
-
     return (
         <div>
             <NavBar/>
             <AnimeSelection/>
 
-            <Box textTransform="capitalize" color="#96A7AF" fontWeight="500" background="#3B3E49" borderRadius="12" width="300px" height="45px" left="70px" top="90px" position="absolute">
+            <Box textTransform="capitalize" paddingLeft="15px" paddingRight="15px" color="#96A7AF" fontWeight="500" background="dark.buttonbackground" borderRadius="5" width="300px" height="45px" left="70px" top="90px" position="absolute">
                 <Center paddingTop="10px">
-                    <Text isTruncated>{searchedAnime}</Text>
+                    <Text isTruncated>Showing {animes.length} Results for: {searchedAnime}</Text>
                 </Center>
             </Box>
 
-            <SimpleGrid position="absolute" top="145px" columns={5} spacingX="30px">
+            <SimpleGrid position="absolute" top="145px" columns={[1, 2, 3, 5, 6, 7]} spacingX="15px">
                 {Object.keys(animes).map((anime) => (
-                    <AnimeCard name={animes[anime]["anime_name"]} imgUrl={animes[anime]["anime_image"]} animeID={animes[anime]["anime_id"]} rating={ typeof animes[anime]["rating"] == "undefined" ? "???" : animes[anime]["rating"] }/>
+                    <AnimeCard name={animes[anime]["anime_name"]} imgUrl={animes[anime]["cover"]} animeID={animes[anime]["gogo_id"]} rating={ typeof animes[anime]["rating"] == "undefined" ? "???" : animes[anime]["score"] }/>
                 ))}
             </SimpleGrid>
         </div>
@@ -34,7 +32,7 @@ function MyApp({ data }){
 }
 
 export async function getServerSideProps(context){
-    const res = await fetch(`https://aniflake-proxy-server.herokuapp.com/search?anime_name=${context.params.slug}`)
+    const res = await fetch(`https://backend-flake-anime.herokuapp.com/search?q=${context.params.slug}`)
     const newData = await res.text()
     const data = [newData]
 
