@@ -10,7 +10,6 @@ function RandomTopAnime(){
     return (
         <Box key={topAnimes[0]} className="className" cursor="pointer">
             <Box opacity={showingCard == topAnimes[0] ? "1" : "0"} zIndex={showingCard == 0 ? "1" : "0"} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
-                {/* <Image width="100%" cursor="context-menu" zIndex={-1} opacity={hovered} transition="0.3s" position="absolute" fallbackSrc="https://i.imgur.com/dnIzpyH.png" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image> */}
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.2s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
                     <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Banish from the Hero's Party</Text>
                 {/* Font Size: 14 */}
@@ -43,13 +42,12 @@ function RandomTopAnime(){
 
                     }} _hover={{ color: "dark.pink" }} style={{ transition: "0.2s" }} position="absolute" color="dark.text" w={6} h={6} bottom="15px" right="20px"/>
 
-                    <Image key={topAnimes[0]} fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image>
+                    <Image key={topAnimes[0]} alt="image" fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image>
                 </Box>
             </Box>
 
 
             <Box key={topAnimes[1]} opacity={showingCard == topAnimes[1] ? "1" : "0"} zIndex={0} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
-                {/* <Image width="100%" cursor="context-menu" zIndex={-1} opacity={hovered} transition="0.3s" position="absolute" fallbackSrc="https://i.imgur.com/dnIzpyH.png" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image> */}
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
                     <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Tate no Yuusha no Nariagari Season 2</Text>
 
@@ -82,13 +80,12 @@ function RandomTopAnime(){
 
                     }} _hover={{ color: "dark.pink" }} style={{ transition: "0.2s" }} position="absolute" color="dark.text" w={6} h={6} bottom="15px" right="20px"/>
 
-                    <Image key={topAnimes[1]} fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://cachecow.eu/min/mal/1021/120882.jpg"></Image>
+                    <Image key={topAnimes[1]} alt="image" fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://cachecow.eu/min/mal/1021/120882.jpg"></Image>
                 </Box>
             </Box>
 
 
             <Box key={topAnimes[2]} opacity={showingCard == topAnimes[2] ? "1" : "0"} zIndex={0} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
-                {/* <Image width="100%" cursor="context-menu" zIndex={-1} opacity={hovered} transition="0.3s" position="absolute" fallbackSrc="https://i.imgur.com/dnIzpyH.png" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image> */}
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
                     <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Aharen-san wa Hakarenai</Text>
 
@@ -121,7 +118,7 @@ function RandomTopAnime(){
 
                     }} _hover={{ color: "dark.pink" }} style={{ transition: "0.2s" }} position="absolute" color="dark.text" w={6} h={6} bottom="15px" right="20px"/>
 
-                    <Image key={topAnimes[2]} fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://cachecow.eu/min/mal/1612/120636.jpg"></Image>
+                    <Image key={topAnimes[2]} alt="image" fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://cachecow.eu/min/mal/1612/120636.jpg"></Image>
                 </Box>
             </Box>
         </Box>

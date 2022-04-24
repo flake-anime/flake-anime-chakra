@@ -18,7 +18,7 @@ function NavBar(){
             </Button>
 
             {/* Logo */}
-            <Image _hover={{ cursor: "pointer"}} top="27px" left="70px" width="35px" position="absolute" src="https://i.imgur.com/GAGPSGW.png" onClick={() => document.location.href="/"}/>
+            <Image alt="logo" _hover={{ cursor: "pointer"}} top="27px" left="70px" width="35px" position="absolute" src="https://i.imgur.com/GAGPSGW.png" onClick={() => document.location.href="/"}/>
             
             {/* Home */}
             {/* Shuffle */}
@@ -28,12 +28,12 @@ function NavBar(){
             {/* Star */}
 
             <SimpleGrid mixBlendMode="lighten" columns={1} top="40px" spacingY="50px" left="25px" position="fixed">
-                <Image cursor="pointer" height="15px" src="https://i.imgur.com/4T35GJ5.png"/>
-                <Image cursor="pointer" height="15px" src="https://i.imgur.com/YpAcgzm.png"/>
-                <Image cursor="pointer" height="15px" src="https://i.imgur.com/wTcnhew.png"/>
-                <Image cursor="pointer" height="15px" src="https://i.imgur.com/50JH9SG.png"/>
-                <Image cursor="pointer" height="15px" src="https://i.imgur.com/Io9ymdK.png"/>
-                <Image cursor="pointer" height="15px" src="https://i.imgur.com/6rke9dV.png"/>
+                <Image alt="home" cursor="pointer" height="15px" src="https://i.imgur.com/4T35GJ5.png"/>
+                <Image alt="shuffle" cursor="pointer" height="15px" src="https://i.imgur.com/YpAcgzm.png"/>
+                <Image alt="heart" cursor="pointer" height="15px" src="https://i.imgur.com/wTcnhew.png"/>
+                <Image alt="message" cursor="pointer" height="15px" src="https://i.imgur.com/50JH9SG.png"/>
+                <Image alt="bell" cursor="pointer" height="15px" src="https://i.imgur.com/Io9ymdK.png"/>
+                <Image alt="star" cursor="pointer" height="15px" src="https://i.imgur.com/6rke9dV.png"/>
             </SimpleGrid>
 
             <form onSubmit={search}>

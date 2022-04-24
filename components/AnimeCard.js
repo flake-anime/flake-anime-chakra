@@ -26,7 +26,7 @@ function AnimeCard({ imgUrl, name, rating, animeID, type, totalEpisodes }){
             )}
 
             <Center marginTop="12px">
-                <Image key={name} fallbackSrc="https://i.imgur.com/8sJVxm8.jpg" borderRadius={10} boxShadow="2xl" width="175px" height="250px" src={imgUrl}></Image>
+                <Image alt={name} key={name} fallbackSrc="https://i.imgur.com/8sJVxm8.jpg" borderRadius={10} boxShadow="2xl" width="175px" height="250px" src={imgUrl}></Image>
             </Center>
 
             {type == "Movies" ? (
