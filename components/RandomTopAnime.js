@@ -43,7 +43,7 @@ function RandomTopAnime(){
 
                     }} _hover={{ color: "dark.pink" }} style={{ transition: "0.2s" }} position="absolute" color="dark.text" w={6} h={6} bottom="15px" right="20px"/>
 
-                    <Image fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image>
+                    <Image key={topAnimes[0]} fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image>
                 </Box>
             </Box>
 
@@ -82,7 +82,7 @@ function RandomTopAnime(){
 
                     }} _hover={{ color: "dark.pink" }} style={{ transition: "0.2s" }} position="absolute" color="dark.text" w={6} h={6} bottom="15px" right="20px"/>
 
-                    <Image fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://cachecow.eu/min/mal/1021/120882.jpg"></Image>
+                    <Image key={topAnimes[1]} fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://cachecow.eu/min/mal/1021/120882.jpg"></Image>
                 </Box>
             </Box>
 
@@ -121,7 +121,7 @@ function RandomTopAnime(){
 
                     }} _hover={{ color: "dark.pink" }} style={{ transition: "0.2s" }} position="absolute" color="dark.text" w={6} h={6} bottom="15px" right="20px"/>
 
-                    <Image fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://cachecow.eu/min/mal/1612/120636.jpg"></Image>
+                    <Image key={topAnimes[2]} fallbackSrc="https://i.imgur.com/dnIzpyH.png" height="200px" width="140px" src="https://cachecow.eu/min/mal/1612/120636.jpg"></Image>
                 </Box>
             </Box>
         </Box>
