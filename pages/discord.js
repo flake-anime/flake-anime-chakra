@@ -9,8 +9,8 @@ function MyApp(){
 
     return (
         <Center>
-            <title>Flake Anime Discord</title>
             <Head>
+                <title>Flake Anime Discord</title>
                 <meta charset="UTF-8"/>
                 <meta property="og:title" content="Flake Anime Discord"/>
                 <meta name="twitter:title" content="Flake Anime Discord"/>

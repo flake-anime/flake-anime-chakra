@@ -16,9 +16,19 @@ function MyApp({ details, episodes }){
     const selectedEpisode = asPath.split("/")[3];
     const episodeLinks = episodeData[episodeData.length-selectedEpisode];
 
+    let anime = searchedAnime.replace("-", " ").split(" ");
+
+    for (let i = 0; i < anime.length; i++) {
+        anime[i] = anime[i][0].toUpperCase() + anime[i].substr(1);
+    }
+
+    const titleAnime = anime.join(" ").replace("-", " ");
+
+    console.log(titleAnime);
+
     // console.log(episodeData);
-    console.log(episodeLinks);
-    console.log(encodeURIComponent(episodeLinks["player_link"]));
+    // console.log(episodeLinks);
+    // console.log(encodeURIComponent(episodeLinks["player_link"]));
 
     function showDifEpisode(e){
         const episodeNum = e.target.className.split(" ")[1];
@@ -33,15 +43,15 @@ function MyApp({ details, episodes }){
 
     return (
         <div>
-            <title>{searchedAnime} Episode {selectedEpisode}</title>
             <Head>
+                <title>{titleAnime} Episode {selectedEpisode}</title>
                 <meta charset="UTF-8"/>
-                <meta property="og:title" content={`${searchedAnime} Episode ${selectedEpisode}`}/>
-                <meta name="twitter:title" content={`${searchedAnime} Episode ${selectedEpisode}`}/>
+                <meta property="og:title" content={`${titleAnime} Episode ${selectedEpisode}`}/>
+                <meta name="twitter:title" content={`${titleAnime} Episode ${selectedEpisode}`}/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:url" content={`https://flake-anime.netlify.app/${searchedAnime}/${selectedEpisode}`}/>
-                <meta name="description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
-                <meta name="twitter:description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
+                <meta name="description" content={`Watch ${titleAnime} using Flake Anime for free!`}/>
+                <meta name="twitter:description" content={`Watch ${titleAnime} using Flake Anime for free!`}/>
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
                 <meta name="twitter:site" content="@discord"/>

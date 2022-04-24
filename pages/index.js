@@ -10,8 +10,8 @@ import Head from "next/head"
 function MyApp(){
   return (
     <div>
-        <title>Flake Anime</title>
         <Head>
+            <title>Flake Anime</title>
             <meta charset="UTF-8"/>
             <meta property="og:title" content="Flake Anime"/>
             <meta name="twitter:title" content="Flake Anime"/>
