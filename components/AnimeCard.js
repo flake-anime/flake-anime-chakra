@@ -13,7 +13,7 @@ function AnimeCard({ imgUrl, name, rating, animeID, type, totalEpisodes }){
     }
 
     return (
-        <Box onClick={clicked} id={animeID} mixBlendMode="lighten" _hover={{ background: "dark.cardhover", cursor: "pointer", mixBlendMode: "normal", transform: "scale(1.02) translate(0, -5px)"}} transition="all .2s ease-in-out" boxShadow="2xl" noOfLines={1} width="200px" borderRadius={15} height="350px" left="60px" position="relative">
+        <Box key={name} onClick={clicked} id={animeID} mixBlendMode="lighten" _hover={{ background: "dark.cardhover", cursor: "pointer", mixBlendMode: "normal", transform: "scale(1.02) translate(0, -5px)"}} transition="all .2s ease-in-out" boxShadow="2xl" noOfLines={1} width="200px" borderRadius={15} height="350px" left="60px" position="relative">
             <Text noOfLines={1} width="174px" position="absolute" color="dark.text" fontWeight="medium" fontSize="14" bottom="55px" left="15px">{name}</Text>
             
             <StarIcon position="absolute" color="dark.pink" w={4} h={4} bottom="15px" left="15px"/>

@@ -12,7 +12,7 @@ function NavBar(){
     }
 
     return (
-        <Box>
+        <Box key="navbar">
             <Button _focus={{ bg: "rgba(44, 45, 54, 0.92)" }} _hover={{ bg: "dark.navbarbuttonhover"}} style={{ transition: "0.2s" }} bgColor="dark.pink" color="white" size="md" width="94px" height="45px" position="absolute" top="25px" right="30px">
                 <Text fontSize="14" fontWeight="400">Sign In</Text>
             </Button>

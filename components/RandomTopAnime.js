@@ -8,7 +8,7 @@ function RandomTopAnime(){
     const topAnimes = [0, 1, 2];
 
     return (
-        <Box className="className" cursor="pointer">
+        <Box key={topAnimes[0]} className="className" cursor="pointer">
             <Box opacity={showingCard == topAnimes[0] ? "1" : "0"} zIndex={showingCard == 0 ? "1" : "0"} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
                 {/* <Image width="100%" cursor="context-menu" zIndex={-1} opacity={hovered} transition="0.3s" position="absolute" fallbackSrc="https://i.imgur.com/dnIzpyH.png" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image> */}
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.2s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
@@ -48,7 +48,7 @@ function RandomTopAnime(){
             </Box>
 
 
-            <Box opacity={showingCard == topAnimes[1] ? "1" : "0"} zIndex={0} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
+            <Box key={topAnimes[1]} opacity={showingCard == topAnimes[1] ? "1" : "0"} zIndex={0} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
                 {/* <Image width="100%" cursor="context-menu" zIndex={-1} opacity={hovered} transition="0.3s" position="absolute" fallbackSrc="https://i.imgur.com/dnIzpyH.png" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image> */}
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
                     <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Tate no Yuusha no Nariagari Season 2</Text>
@@ -87,7 +87,7 @@ function RandomTopAnime(){
             </Box>
 
 
-            <Box opacity={showingCard == topAnimes[2] ? "1" : "0"} zIndex={0} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
+            <Box key={topAnimes[2]} opacity={showingCard == topAnimes[2] ? "1" : "0"} zIndex={0} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
                 {/* <Image width="100%" cursor="context-menu" zIndex={-1} opacity={hovered} transition="0.3s" position="absolute" fallbackSrc="https://i.imgur.com/dnIzpyH.png" src="https://gogocdn.net/cover/shin-no-nakama-ja-nai-to-yuusha-no-party-wo-oidasareta-node-henkyou-de-slow-life-suru-koto-ni-shimashita.png"></Image> */}
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
                     <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Aharen-san wa Hakarenai</Text>

@@ -19,7 +19,7 @@ function Player({ width, height, episodeLink }){
         //         </Slider>
         //     </Box>
         // </Box>
-        <Box width={width} height={height} borderRadius={8} overflow="hidden">
+        <Box key="player" width={width} height={height} borderRadius={8} overflow="hidden">
             <iframe width={width} height={height} allowFullScreen src={"http://proxy-server-flake-anime.herokuapp.com/player?player_link=" + episodeLink}></iframe>
         </Box>
     )

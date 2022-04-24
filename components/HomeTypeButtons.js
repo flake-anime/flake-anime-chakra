@@ -9,7 +9,7 @@ function HomeTypeButtons(){
     const [movie, setMovie] = useState(false);
     
     return (
-        <Box cursor="pointer">
+        <Box key="typeButton" cursor="pointer">
             <Stack position="absolute" direction="row" spacing={4} align="center" top="300px" left="70px">
                 <Button _focus={{ bg: "dark.buttonfocus" }} onClick={() => {
                         setNewEps(true);

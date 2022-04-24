@@ -9,7 +9,7 @@ function StreamingDetails({ data }){
     console.log(data);
 
     return (
-        <Box position="absolute" width="470px" height="200px" background="#3B3E49" borderRadius="8px" right="30px" top="95px">
+        <Box key="streamingDetails" position="absolute" width="470px" height="200px" background="#3B3E49" borderRadius="8px" right="30px" top="95px">
             <Box padding="15px" position="absolute">
                 <IoFolderOpenSharp position="relative" size={22} color="#C4C4C4"/>
             </Box>
