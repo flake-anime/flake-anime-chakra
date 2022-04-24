@@ -7,12 +7,13 @@ import { useState } from "react";
 import Head from "next/head";
 
 function MyApp({ details, episodes }){
+    const router = useRouter()
+
     try {
         const data = JSON.parse(details);
         const episodeData = JSON.parse(episodes);
         const genres = data["genres"];
         const { asPath } = useRouter();
-        const router = useRouter()
         const searchedAnime = decodeURI(asPath.split("/")[2]);
         const selectedEpisode = asPath.split("/")[3];
         const episodeLinks = episodeData[episodeData.length-selectedEpisode];
