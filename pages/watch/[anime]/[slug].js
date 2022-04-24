@@ -24,8 +24,7 @@ function MyApp({ details, episodes }){
 
     const titleAnime = anime.join(" ").replace("-", " ");
 
-    console.log(titleAnime);
-
+    // console.log(titleAnime);
     // console.log(episodeData);
     // console.log(episodeLinks);
     // console.log(encodeURIComponent(episodeLinks["player_link"]));
@@ -55,6 +54,7 @@ function MyApp({ details, episodes }){
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
                 <meta name="twitter:site" content="@discord"/>
+                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
             </Head>
 
             <NavBar/>
