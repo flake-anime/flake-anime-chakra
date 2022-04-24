@@ -13,13 +13,15 @@ function MyApp(){
         <title>Flake Anime</title>
         <Head>
             <meta property="og:title" content="Flake Anime"/>
+            <meta name="twitter:title" content="Flake Anime"/>
             <meta property="og:type" content="website"/>
             <meta property="og:url" content="https://flake-anime.netlify.app/"/>
             <meta property="og:description" content="Watch FREE UNLIMITED anime WITHOUT ADS in HD RESOLUTION and much more!"/>
+            <meta name="twitter:description" content="Watch FREE UNLIMITED anime WITHOUT ADS in HD RESOLUTION and much more!"/>
+            <meta name="twitter:card" content="summary_large_image"/>
             <meta property="og:image" content="https://i.imgur.com/MexfEp6.png"/>
+            <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"></meta>
             <meta property="og:image:type" content="image/png"/>
-            <meta property="og:image:width" content="1920"/>
-            <meta property="og:image:height" content="960"/>
         </Head>
         
         <NavBar/>
