@@ -14,7 +14,6 @@ function MyApp({ data }){
     return (
         <div>
             <NavBar/>
-            <AnimeSelection/>
 
             <Box textTransform="capitalize" paddingLeft="15px" paddingRight="15px" color="#96A7AF" fontWeight="500" background="dark.buttonbackground" borderRadius="5" width="300px" height="45px" left="70px" top="90px" position="absolute">
                 <Center paddingTop="10px">
@@ -24,7 +23,7 @@ function MyApp({ data }){
 
             <SimpleGrid position="absolute" top="145px" columns={[1, 2, 3, 5, 6, 7]} spacingX="15px">
                 {Object.keys(animes).map((anime) => (
-                    <AnimeCard name={animes[anime]["anime_name"]} imgUrl={animes[anime]["cover"]} animeID={animes[anime]["gogo_id"]} rating={ typeof animes[anime]["rating"] == "undefined" ? "???" : animes[anime]["score"] }/>
+                    <AnimeCard totalEpisodes={animes[anime]["total_episodes"]} type={animes[anime]["type"]} name={animes[anime]["anime_name"]} imgUrl={animes[anime]["cover"]} animeID={animes[anime]["gogo_id"]} rating={ typeof animes[anime]["rating"] == "undefined" ? "???" : animes[anime]["score"] }/>
                 ))}
             </SimpleGrid>
         </div>

@@ -13,9 +13,11 @@ function MyApp({ details, episodes }){
     const router = useRouter()
     const searchedAnime = decodeURI(asPath.split("/")[2]);
     const selectedEpisode = asPath.split("/")[3];
+    const episodeLinks = episodeData[episodeData.length-selectedEpisode];
 
-    console.log(episodeData);
-    console.log(episodeData[episodeData.length-selectedEpisode])
+    // console.log(episodeData);
+    console.log(episodeLinks);
+    console.log(encodeURIComponent(episodeLinks["player_link"]));
 
     function showDifEpisode(e){
         const episodeNum = e.target.className.split(" ")[1];
@@ -32,8 +34,8 @@ function MyApp({ details, episodes }){
         <div>
             <NavBar/>
 
-            <Box left="70px" position="absolute">
-                <Player width="1000px" height="550px"/>
+            <Box left="70px" top="95px" position="absolute">
+                <Player width="1000px" height="562.5px" episodeLink={encodeURIComponent(episodeLinks["player_link"])}/>
             </Box>
 
             <Box position="absolute" width="470px" height="200px" background="dark.buttonbackground" borderRadius="8px" right="30px" top="95px">
@@ -44,10 +46,10 @@ function MyApp({ details, episodes }){
                 <Text paddingRight="15px" color="#ffffff" noOfLines={1} textTransform="capitalize" position="absolute" top="14px" left="42px" fontWeight="500">{data["anime_name"]}</Text>
                 <Text color="#ffffff" paddingRight="15px" fontSize="12px" noOfLines={5} textTransform="capitalize" position="absolute" top="50px" left="15px" fontWeight="regular">{data["plot_summary"]}</Text>
             
-                <Box position="relative" width="470px" height="200px" borderRadius="8px" right="0px" top="0px" overflow="hidden">
-                    <SimpleGrid position="absolute" display="flex" justifyContent="center" bottom="15px" left="15px" color="white" columns={1} rows={1} spacingX="15px">
+                <Box position="relative" width="420px" height="200px" borderRadius="8px" right="0px" top="0px" overflow="hidden">
+                    <SimpleGrid position="absolute" display="flex" justifyContent="center" bottom="15px" left="15px" color="white" columns={1} rows={1} spacingX="15px" minChildWidth="50px">
                         {Object.keys(genres).map((genre) => (
-                            <Tag key={genre} background="dark.pink" color="white" height="30px" borderRadius="25px" paddingLeft="20px" paddingRight="20px" fontWeight="regular">{genres[genre].trim()}</Tag>
+                            <Tag key={genre} position="relative" background="dark.pink" color="white" height="30px" borderRadius="25px" paddingLeft="20px" paddingRight="20px" fontWeight="regular">{genres[genre].trim()}</Tag>
                         ))}
                     </SimpleGrid>
                 </Box>
@@ -62,7 +64,7 @@ function MyApp({ details, episodes }){
             
                 <SimpleGrid left="15px" top="50px" columns={8} position="absolute" spacingX="17px" spacingY="10px">
                     {Object.keys(episodeData).map((episodeNum) => (
-                        <Button key={parseInt(episodeNum)+1} className={parseInt(episodeNum)+1} _focus={{ bg: "dark.buttonfocus" }} isActive={selectedEpisode == parseInt(episodeNum)+1 ? true : false} onClick={(e) => {showDifEpisode(e)}} _active={{ bg: "dark.pink", color: "white" }} _hover={{ background: "dark.buttonfocus", color: "white" }} background="dark.buttonhoverbackground" _active={{ bg: "#ED64A6", color: "white" }} color="white" width="40px" height="35px">{parseInt(episodeNum)+1}</Button>
+                        <Button key={parseInt(episodeNum)+1} className={parseInt(episodeNum)+1} _focus={{ bg: "dark.buttonfocus" }} isActive={selectedEpisode == parseInt(episodeNum)+1 ? true : false} onClick={(e) => {showDifEpisode(e)}} _active={{ bg: "dark.pink", color: "white" }} _hover={{ background: "dark.buttonfocus", color: "white" }} background="dark.buttonhoverbackground" color="white" width="40px" height="35px">{parseInt(episodeNum)+1}</Button>
                     ))}
                 </SimpleGrid>
             </Box>
