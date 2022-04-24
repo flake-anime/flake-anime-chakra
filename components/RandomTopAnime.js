@@ -11,7 +11,7 @@ function RandomTopAnime(){
         <Box key={topAnimes[0]} className="className" cursor="pointer">
             <Box opacity={showingCard == topAnimes[0] ? "1" : "0"} zIndex={showingCard == 0 ? "1" : "0"} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.2s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
-                    <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Banish from the Hero's Party</Text>
+                    <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Banish from the Hero&apos;s Party</Text>
                 {/* Font Size: 14 */}
                     <Text color="dark.text" position="absolute" top="60px" left="165px" fontSize="14px">
                         Miko is a typical high school student whose life turns upside down when she suddenly starts to see gruesome and hideous monsters. Despite being completely terrified, Miko carries on with her daily life, pretending not to notice the horrors that surround her.
