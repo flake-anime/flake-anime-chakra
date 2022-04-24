@@ -1,11 +1,26 @@
-import { Center, Text, Button, Tag, SimpleGrid, Box } from "@chakra-ui/react"
-import NavBar from "/components/NavBar"
-import DetailCard from "/components/DetailCard"
-import Player from "/components/Player"
+import { Center, Text, Button, Tag, SimpleGrid, Box } from "@chakra-ui/react";
+import NavBar from "/components/NavBar";
+import DetailCard from "/components/DetailCard";
+import Player from "/components/Player";
+import Head from "next/head";
 
 function MyApp(){
   return (
     <div>
+        {/* <Head>
+            <title></title>
+            <meta charset="UTF-8"/>
+            <meta property="og:title" content="Flake Anime"/>
+            <meta name="twitter:title" content="Flake Anime"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:url" content="https://flake-anime.netlify.app/"/>
+            <meta name="description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about! "/>
+            <meta name="twitter:description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
+            <meta name="twitter:card" content="summary_large_image"/>
+            <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
+            <meta name="twitter:site" content="@discord"/>
+        </Head> */}
+
         <NavBar/>
         {/* <DetailCard/> */}
         

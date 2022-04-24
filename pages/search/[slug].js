@@ -1,10 +1,11 @@
-import { Box, Center, Text, SimpleGrid } from "@chakra-ui/react"
-import NavBar from "/components/NavBar"
-import RandomTopAnime from "/components/RandomTopAnime"
-import HomeTypeButtons from "/components/HomeTypeButtons"
-import AnimeCard from "/components/AnimeCard"
-import AnimeSelection from "/components/AnimeSelection"
-import { useRouter } from 'next/router'
+import { Box, Center, Text, SimpleGrid } from "@chakra-ui/react";
+import NavBar from "/components/NavBar";
+import RandomTopAnime from "/components/RandomTopAnime";
+import HomeTypeButtons from "/components/HomeTypeButtons";
+import AnimeCard from "/components/AnimeCard";
+import AnimeSelection from "/components/AnimeSelection";
+import { useRouter } from 'next/router';
+import Head from "next/head";
 
 function MyApp({ data }){
     const animes = JSON.parse(data)
@@ -13,6 +14,20 @@ function MyApp({ data }){
 
     return (
         <div>
+            <Head>
+                <title>Searching Results for {searchedAnime}</title>
+                <meta charset="UTF-8"/>
+                <meta property="og:title" content={`Showing Results for ${searchedAnime}`}/>
+                <meta name="twitter:title" content={`Showing Results for ${searchedAnime}`}/>
+                <meta property="og:type" content="website"/>
+                <meta property="og:url" content={`https://flake-anime.netlify.app/search/${searchedAnime.replace(" ", /-/g)}`}/>
+                <meta name="description" content={`Showing Results for ${searchedAnime}`}/>
+                <meta name="twitter:description" content={`Showing Results for ${searchedAnime}`}/>
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
+                <meta name="twitter:site" content="@discord"/>
+            </Head>
+        
             <NavBar/>
 
             <Box textTransform="capitalize" paddingLeft="15px" paddingRight="15px" color="#96A7AF" fontWeight="500" background="dark.buttonbackground" borderRadius="5" width="300px" height="45px" left="70px" top="90px" position="absolute">

@@ -17,7 +17,7 @@ function MyApp(){
             <meta name="twitter:title" content="Flake Anime"/>
             <meta property="og:type" content="website"/>
             <meta property="og:url" content="https://flake-anime.netlify.app/"/>
-            <meta name="description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
+            <meta name="description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about! "/>
             <meta name="twitter:description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
