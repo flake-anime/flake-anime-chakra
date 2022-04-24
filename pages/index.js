@@ -5,10 +5,18 @@ import HomeTypeButtons from "../components/HomeTypeButtons"
 import AnimeCard from "../components/AnimeCard"
 import AnimeSelection from "../components/AnimeSelection"
 import DiscordServer from "../components/DiscordServer"
+import Head from 'next/head'
 
 function MyApp(){
   return (
     <div>
+        <Head>
+            <meta property="og:title" content="Flake Anime"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:url" content="https://flake-anime.netlify.app/"/>
+            <meta property="og:image" content="https://discord.com/channels/933454293623775332/937025152636551188/937390906645024881"/>
+        </Head>
+        
         <NavBar/>
         <RandomTopAnime/>
         <HomeTypeButtons/>
