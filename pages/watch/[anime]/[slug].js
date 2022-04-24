@@ -54,7 +54,7 @@ function MyApp({ details, episodes }){
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
                 <meta name="twitter:site" content="@discord"/>
-                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+                <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
             </Head>
 
             <NavBar/>
