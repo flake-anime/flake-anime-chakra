@@ -14,7 +14,8 @@ function MyApp(){
             <meta property="og:title" content="Flake Anime"/>
             <meta property="og:type" content="website"/>
             <meta property="og:url" content="https://flake-anime.netlify.app/"/>
-            <meta property="og:image" content="https://cdn.discordapp.com/attachments/937025152636551188/937390903482548264/Banner.png"/>
+            <meta property="og:image" content="https://i.imgur.com/MexfEp6.png"/>
+            <meta property="og:image:type" content="image/png"/>
         </Head>
         
         <NavBar/>
