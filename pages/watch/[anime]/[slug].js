@@ -4,6 +4,7 @@ import Player from "/components/Player"
 import { useRouter } from "next/router"
 import { IoFolderOpenSharp } from "react-icons/io5"
 import { useState } from "react";
+import Head from "next/head";
 
 function MyApp({ details, episodes }){
     const data = JSON.parse(details);
@@ -32,6 +33,20 @@ function MyApp({ details, episodes }){
 
     return (
         <div>
+            <title>{searchedAnime} Episode {selectedEpisode}</title>
+            <Head>
+                <meta charset="UTF-8"/>
+                <meta property="og:title" content={`${searchedAnime} Episode ${selectedEpisode}`}/>
+                <meta name="twitter:title" content={`${searchedAnime} Episode ${selectedEpisode}`}/>
+                <meta property="og:type" content="website"/>
+                <meta property="og:url" content={`https://flake-anime.netlify.app/${searchedAnime}/${selectedEpisode}`}/>
+                <meta name="description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
+                <meta name="twitter:description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
+                <meta name="twitter:site" content="@discord"/>
+            </Head>
+
             <NavBar/>
 
             <Box left="70px" top="95px" position="absolute">

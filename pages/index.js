@@ -5,7 +5,7 @@ import HomeTypeButtons from "../components/HomeTypeButtons"
 import AnimeCard from "../components/AnimeCard"
 import AnimeSelection from "../components/AnimeSelection"
 import DiscordServer from "../components/DiscordServer"
-import Head from 'next/head'
+import Head from "next/head"
 
 function MyApp(){
   return (
@@ -17,10 +17,11 @@ function MyApp(){
             <meta name="twitter:title" content="Flake Anime"/>
             <meta property="og:type" content="website"/>
             <meta property="og:url" content="https://flake-anime.netlify.app/"/>
-            <meta name="description" content="Watch FREE UNLIMITED anime WITHOUT ADS in HD RESOLUTION and much more!"/>
-            <meta name="twitter:description" content="Watch FREE UNLIMITED anime WITHOUT ADS in HD RESOLUTION and much more!"/>
+            <meta name="description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
+            <meta name="twitter:description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
+            <meta name="twitter:site" content="@discord"/>
         </Head>
         
         <NavBar/>
