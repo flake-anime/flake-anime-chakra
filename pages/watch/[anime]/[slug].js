@@ -3,17 +3,16 @@ import NavBar from "/components/NavBar"
 import Player from "/components/Player"
 import { useRouter } from "next/router"
 import { IoFolderOpenSharp } from "react-icons/io5"
-import { useState } from "react";
 import Head from "next/head";
 
 function MyApp({ details, episodes }){
     const router = useRouter()
+    const { asPath } = useRouter();
 
     try {
         const data = JSON.parse(details);
         const episodeData = JSON.parse(episodes);
         const genres = data["genres"];
-        const { asPath } = useRouter();
         const searchedAnime = decodeURI(asPath.split("/")[2]);
         const selectedEpisode = asPath.split("/")[3];
         const episodeLinks = episodeData[episodeData.length-selectedEpisode];
