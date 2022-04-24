@@ -30,7 +30,7 @@ function MyApp({ data }){
         
             <NavBar/>
 
-            <Box textTransform="capitalize" paddingLeft="15px" paddingRight="15px" color="#96A7AF" fontWeight="500" background="dark.buttonbackground" borderRadius="5" width="300px" height="45px" left="70px" top="90px" position="absolute">
+            <Box textTransform="capitalize" paddingLeft="15px" paddingRight="15px" color="#96A7AF" fontWeight="500" background="dark.buttonbackground" borderRadius="5" width="500px" height="45px" left="70px" top="90px" position="absolute">
                 <Center paddingTop="10px">
                     <Text isTruncated>Showing {animes.length} Results for: {searchedAnime}</Text>
                 </Center>

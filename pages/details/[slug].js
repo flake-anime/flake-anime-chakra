@@ -1,6 +1,8 @@
 import { Center, Text, Button, Tag, SimpleGrid, Box } from "@chakra-ui/react";
 import NavBar from "/components/NavBar";
 import DetailCard from "/components/DetailCard";
+import DefaultPlayer from "/components/DefaultPlayer";
+import TrailerInvalid from "/components/TrailerInvalid";
 import Player from "/components/Player";
 import Head from "next/head";
 
@@ -22,7 +24,7 @@ function MyApp(){
         </Head> */}
 
         <NavBar/>
-        {/* <DetailCard/> */}
+        <DetailCard/>
         
         <Text color="dark.text" position="absolute" top="95px" left="400px" fontWeight="semibold" fontSize="50px">Attack On Titan</Text>
         
@@ -36,7 +38,7 @@ function MyApp(){
         <Tag background="dark.navbarbuttonhover" left="705px" top="230px" position="absolute" height="40px" color="white" borderRadius="25px" paddingLeft="20px" paddingRight="20px" fontWeight="regular">Romance</Tag>
 
         <Center position="relative" top="200px">
-            <Player width="800px" height="450px"/>
+            <TrailerInvalid width="800px" height="450px"/>
         </Center>
     </div>
   )

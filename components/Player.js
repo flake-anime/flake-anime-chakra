@@ -1,7 +1,7 @@
 import { Box, Center, Slider, SliderTrack, SliderFilledTrack, SliderThumb } from "@chakra-ui/react"
 import { TriangleDownIcon } from "@chakra-ui/icons"
 
-function Player({ width, height, episodeLink }){
+function Player({ width, height, episodeLink, trailerValid }){
     return (
         // <Box cursor="pointer" background="dark.buttonbackground" borderRadius="8px" width={width} height={height} top="95px" position="absolute">
         //     <Center paddingTop={`calc(${height} / 2.7)`}>
@@ -19,8 +19,9 @@ function Player({ width, height, episodeLink }){
         //         </Slider>
         //     </Box>
         // </Box>
+
         <Box key="player" width={width} height={height} borderRadius={8} overflow="hidden">
-            <iframe width={width} height={height} allowFullScreen src={"http://proxy-server-flake-anime.herokuapp.com/player?player_link=" + episodeLink}></iframe>
+            <iframe width={width} height={height} allowFullScreen src={"https://proxy-server-flake-anime.herokuapp.com/player?player_link=" + episodeLink}></iframe>
         </Box>
     )
 }
