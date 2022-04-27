@@ -33,7 +33,7 @@ function AnimeCard({ imgUrl, name, rating, animeID, type, totalEpisodes }){
                 <Box position="absolute" top="12px" opacity="0.8" left="12.5px" borderRadius="8px 0px 5px 0px" background="dark.buttonhoverbackground" width="87.5px" height="30px">
                     <Text paddingTop="3px" paddingLeft="20px" color="white" fontSize="15px" noOfLines={5} textTransform="uppercase" position="absolute" top="0px" left="0px" fontWeight="semibold">Movie</Text>
                 </Box>
-            ) : <></>}
+            ) : null}
         </Box>
     )
 }
