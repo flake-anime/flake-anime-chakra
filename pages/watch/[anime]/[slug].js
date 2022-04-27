@@ -12,18 +12,18 @@ function MyApp({ details, episodes }){
     const [boxWidth, setBoxWidth] = useState(0);
     const [boxOpacity, setBoxOpacity] = useState(0);
 
-    try {
-        setTimeout(function(){
-            setBoxWidth(window.innerWidth / 3.4);
-            setBoxOpacity(1);
-        }, 1000);
-    
-        useEffect(()=> {
-            window.addEventListener('resize', ()=> {
-                setBoxWidth(window.innerWidth / 3.4)
-            })
-        }, [])
+    setTimeout(function(){
+        setBoxWidth(window.innerWidth / 3.4);
+        setBoxOpacity(1);
+    }, 1000);
 
+    useEffect(()=> {
+        window.addEventListener('resize', ()=> {
+            setBoxWidth(window.innerWidth / 3.4)
+        })
+    }, [])
+
+    try {
         const data = JSON.parse(details);
         const episodeData = JSON.parse(episodes);
         const genres = data["genres"];
