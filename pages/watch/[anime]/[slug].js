@@ -9,12 +9,10 @@ import { useState, useEffect } from "react";
 function MyApp({ details, episodes }){
     const router = useRouter()
     const { asPath } = useRouter();
+    const [boxWidth, setBoxWidth] = useState(0);
+    const [boxOpacity, setBoxOpacity] = useState(0);
 
     try {
-
-        const [boxWidth, setBoxWidth] = useState(0);
-        const [boxOpacity, setBoxOpacity] = useState(0);
-
         setTimeout(function(){
             setBoxWidth(window.innerWidth / 3.4);
             setBoxOpacity(1);
