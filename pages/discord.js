@@ -19,7 +19,7 @@ function MyApp(){
                 <meta name="description" content="Watch FREE UNLIMITED anime WITHOUT ADS in HD RESOLUTION and much more!"/>
                 <meta name="twitter:description" content="Watch FREE UNLIMITED anime WITHOUT ADS in HD RESOLUTION and much more!"/>
                 <meta name="twitter:card" content="summary_large_image"/>
-                <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
+                <meta name="twitter:image" content="https://i.imgur.com/eCteqHY.jpg"/>
                 <meta name="twitter:site" content="@discord"/>
             </Head>
 
