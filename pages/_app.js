@@ -1,5 +1,6 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import '../styles/globals.css'
+import '../styles/loading.css'
 
 const theme = extendTheme({
     colors: {

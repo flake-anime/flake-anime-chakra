@@ -1,6 +1,7 @@
 import { Box, Text, SimpleGrid,  Button, Tag, Center } from "@chakra-ui/react";
 import NavBar from "/components/NavBar";
 import Player from "/components/Player";
+import DefaultPlayer from "/components/DefaultPlayer";
 import { useRouter } from "next/router";
 import { IoFolderOpenSharp } from "react-icons/io5";
 import Head from "next/head";
@@ -76,7 +77,8 @@ function MyApp({ details, episodes }){
                 <NavBar/>
     
                 <Box left="70px" top="95px" position="absolute">
-                    <Player width="1000px" height="562.5px" episodeLink={encodeURIComponent(episodeLinks["player_link"])}/>
+                    {/* <DefaultPlayer zIndex={0}/> */}
+                    <Player zIndex={1} episodeLink={encodeURIComponent(episodeLinks["player_link"])}/>
                 </Box>
     
                 {/* Top Box - 3.4 */}
@@ -88,7 +90,7 @@ function MyApp({ details, episodes }){
                     <Text paddingRight="15px" color="#ffffff" noOfLines={1} textTransform="capitalize" position="absolute" top="14px" left="42px" fontWeight="500">{data["anime_name"]}</Text>
                     <Text color="#ffffff" paddingRight="15px" fontSize="12px" noOfLines={5} textTransform="capitalize" position="absolute" top="50px" left="15px" fontWeight="regular">{data["plot_summary"]}</Text>
                 
-                    <Box position="relative" width={boxWidth} height="200px" borderRadius="8px" right="0px" top="0px" overflow="hidden">
+                    <Box position="relative" height="200px" borderRadius="8px" right="0px" top="0px" overflow="hidden">
                         <SimpleGrid position="absolute" display="flex" justifyContent="center" bottom="15px" left="15px" color="white" columns={1} rows={1} spacingX="15px" minChildWidth="50px">
                             {Object.keys(genres).map((genre) => (
                                 <Tag key={genre} position="relative" background="dark.pink" color="white" height="30px" borderRadius="25px" paddingLeft="20px" paddingRight="20px" fontWeight="regular">{genres[genre].trim()}</Tag>
