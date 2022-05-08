@@ -17,7 +17,7 @@ function NavBar(){
     return (
         <Box key="navbar">
             <Center>
-                <div class={loading ? "lds-dual-ring" : "loading"}></div>
+                <div className={loading ? "lds-dual-ring" : "loading"}></div>
             </Center>
 
             <Box class="navbarClass">
