@@ -61,8 +61,8 @@ function MyApp({ details, episodes }){
                 <Head>
                     <title>{titleAnime} Episode {selectedEpisode}</title>
                     <meta charset="UTF-8"/>
-                    <meta property="og:title" content={`${titleAnime} Episode ${selectedEpisode}`}/>
-                    <meta name="twitter:title" content={`${titleAnime} Episode ${selectedEpisode}`}/>
+                    <meta property="og:title" content={`${titleAnime.replace("-", "")} Episode ${selectedEpisode}`}/>
+                    <meta name="twitter:title" content={`${titleAnime.replace("-", "")} Episode ${selectedEpisode}`}/>
                     <meta property="og:type" content="website"/>
                     <meta property="og:url" content={`https://flake-anime.netlify.app/${searchedAnime}/${selectedEpisode}`}/>
                     <meta name="description" content={`Watch ${titleAnime} using Flake Anime for free!`}/>
