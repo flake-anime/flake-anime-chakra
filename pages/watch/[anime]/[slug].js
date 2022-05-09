@@ -59,7 +59,7 @@ function MyApp({ details, episodes }){
         return (
             <div>
                 <Head>
-                    <title>{titleAnime} Episode {selectedEpisode}</title>
+                    <title>{titleAnime.replace("-", "")} Episode {selectedEpisode}</title>
                     <meta charset="UTF-8"/>
                     <meta property="og:title" content={`${titleAnime.replace("-", "")} Episode ${selectedEpisode}`}/>
                     <meta name="twitter:title" content={`${titleAnime.replace("-", "")} Episode ${selectedEpisode}`}/>
