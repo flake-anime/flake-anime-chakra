@@ -37,7 +37,7 @@ function MyApp({ details, episodes }){
         for (let i = 0; i < anime.length; i++) {
             anime[i] = anime[i][0].toUpperCase() + anime[i].substr(1);
         }
-    
+
         const titleAnime = anime.join(" ").replace("-", " ");
     
         // console.log(titleAnime);
@@ -59,14 +59,14 @@ function MyApp({ details, episodes }){
         return (
             <div>
                 <Head>
-                    <title>{searchedAnime.replace("-", " ")} Episode {selectedEpisode}</title>
+                    <title>{titleAnime.replace("-", "")} Episode {selectedEpisode}</title>
                     <meta charset="UTF-8"/>
-                    <meta property="og:title" content={`${searchedAnime.replace("-", " ")} Episode ${selectedEpisode}`}/>
-                    <meta name="twitter:title" content={`${searchedAnime.replace("-", " ")} Episode ${selectedEpisode}`}/>
+                    <meta property="og:title" content={`${titleAnime.replace("-", "")} Episode ${selectedEpisode}`}/>
+                    <meta name="twitter:title" content={`${titleAnime.replace("-", "")} Episode ${selectedEpisode}`}/>
                     <meta property="og:type" content="website"/>
                     <meta property="og:url" content={`https://flake-anime.netlify.app/${searchedAnime}/${selectedEpisode}`}/>
-                    <meta name="description" content={`Watch ${titleAnime} using Flake Anime for free!`}/>
-                    <meta name="twitter:description" content={`Watch ${titleAnime} using Flake Anime for free!`}/>
+                    <meta name="description" content={data["plot_summary"]}/>
+                    <meta name="twitter:description" content={data["plot_summary"]}/>
                     <meta name="twitter:card" content="summary_large_image"/>
                     <meta name="twitter:image" content={data["cover"]}/>
                     <meta name="twitter:site" content="@discord"/>
