@@ -10,7 +10,6 @@ function DetailCard() {
 
   return (
     <Box
-      class="discord-navbar"
       key="discord"
       onClick={join}
       cursor="pointer"
