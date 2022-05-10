@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import { StarIcon } from "@chakra-ui/icons"
 import { useRouter } from "next/router"
 
-function AnimeCard({ imgUrl, name, rating, animeID, type, totalEpisodes }){
+function TestAnimeCard({ imgUrl, name, rating, animeID, type, totalEpisodes }){
     const router = useRouter()
 
     const clicked = async(event) => {
@@ -13,7 +13,7 @@ function AnimeCard({ imgUrl, name, rating, animeID, type, totalEpisodes }){
     }
 
     return (
-        <Box key={name} onClick={clicked} id={animeID} _hover={{ background: "dark.cardhover", cursor: "pointer", transform: "scale(1.02) translate(0, -5px)"}} transition="all .2s ease-in-out" boxShadow="2xl" noOfLines={1} minWidth="200px" width="auto" borderRadius={15} minHeight="350px" left="60px" position="relative">
+        <Box key={name} onClick={clicked} id={animeID} _hover={{ background: "dark.cardhover", cursor: "pointer", transform: "scale(1.02) translate(0, -5px)"}} transition="all .2s ease-in-out" boxShadow="2xl" noOfLines={1} maxWidth="200px" borderRadius={15} minHeight="350px" left="60px" position="relative">
             <Text noOfLines={1} width="174px" position="absolute" color="dark.text" fontWeight="medium" fontSize="14" bottom="55px" left="15px">{name}</Text>
             
             <StarIcon position="absolute" color="dark.pink" w={4} h={4} bottom="15px" left="15px"/>
@@ -38,4 +38,4 @@ function AnimeCard({ imgUrl, name, rating, animeID, type, totalEpisodes }){
     )
 }
 
-export default AnimeCard
+export default TestAnimeCard

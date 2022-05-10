@@ -1,4 +1,4 @@
-import { SimpleGrid } from "@chakra-ui/react"
+import { SimpleGrid, Box } from "@chakra-ui/react"
 import NavBar from "../components/NavBar"
 import RandomTopAnime from "../components/RandomTopAnime"
 import HomeTypeButtons from "../components/HomeTypeButtons"
@@ -28,7 +28,7 @@ function MyApp(){
         <NavBar/>
         <RandomTopAnime/>
         <HomeTypeButtons/>
-        <DiscordServer/>
+        {/* <DiscordServer/> */}
 
 
         <SimpleGrid position="absolute" top="360px" spacingX="30px" style={{ height: "50vh", width: "calc(100vw - 50px)", display: "flex", flexWrap: "wrap" }}>
