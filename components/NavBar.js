@@ -21,6 +21,7 @@ function NavBar() {
     setLoading(true);
 
     router.push(`/search/${event.target.textbox.value.replace(/ /g, "-")}`);
+    setLoading(false);
   };
 
   return (
