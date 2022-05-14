@@ -9,11 +9,11 @@ function RandomTopAnime(){
 
     return (
         <Box key={topAnimes[0]} className="className" cursor="pointer">
-            <Box opacity={showingCard == topAnimes[0] ? "1" : "0"} zIndex={showingCard == 0 ? "1" : "0"} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
-                <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.2s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
-                    <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Banish from the Hero&apos;s Party</Text>
+            <Box opacity={showingCard == topAnimes[0] ? "1" : "0"} zIndex={showingCard == 0 ? "1" : "0"} overflow="hidden" width="80vw" borderRadius={12} marginTop="95px" marginLeft="70px" height={[175]} position="absolute">
+                <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.2s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width="100%" height="175px" borderRadius="12px">
+                    <Text fontWeight="medium" color="dark.text" noOfLines={1} position="absolute" top="15px" left="165px" fontSize="20px">Banish from the Hero&apos;s Party</Text>
                 {/* Font Size: 14 */}
-                    <Text color="dark.text" position="absolute" top="60px" left="165px" fontSize="14px">
+                    <Text color="dark.text" noOfLines={3} position="absolute" top="60px" left="165px" fontSize="14px" paddingLeft="10px">
                         Miko is a typical high school student whose life turns upside down when she suddenly starts to see gruesome and hideous monsters. Despite being completely terrified, Miko carries on with her daily life, pretending not to notice the horrors that surround her.
                     </Text>
 
@@ -47,11 +47,11 @@ function RandomTopAnime(){
             </Box>
 
 
-            <Box key={topAnimes[1]} opacity={showingCard == topAnimes[1] ? "1" : "0"} zIndex={0} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
-                <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
-                    <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Tate no Yuusha no Nariagari Season 2</Text>
+            <Box key={topAnimes[1]} opacity={showingCard == topAnimes[1] ? "1" : "0"} zIndex={0} overflow="hidden" width="80vw" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
+                <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width="100%" height="175px" borderRadius="12px">
+                    <Text fontWeight="medium" color="dark.text" noOfLines={1} position="absolute" top="15px" left="165px" fontSize="20px">Tate no Yuusha no Nariagari Season 2</Text>
 
-                    <Text color="dark.text" position="absolute" top="60px" left="165px" fontSize="14px">
+                    <Text color="dark.text" noOfLines={3} position="absolute" top="60px" left="165px" fontSize="14px">
                         Second season of Tate no Yuusha no Nariagari. As the Shield Hero, the weakest of the heroes, all is not as it seems. Naofumi is soon alone, penniless, and betrayed. With no one to turn to, and nowhere to run, he is left with only his shield. Now, Naofumi must rise to become the legendary Shield Hero and save the world!
                     </Text>
 
@@ -85,11 +85,11 @@ function RandomTopAnime(){
             </Box>
 
 
-            <Box key={topAnimes[2]} opacity={showingCard == topAnimes[2] ? "1" : "0"} zIndex={0} overflow="hidden" width="1100px" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
-                <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width={[0, 500, 700, 900, 1100]} height="175px" borderRadius="12px">
-                    <Text fontWeight="medium" color="dark.text" position="absolute" top="15px" left="165px" fontSize="20px">Aharen-san wa Hakarenai</Text>
+            <Box key={topAnimes[2]} opacity={showingCard == topAnimes[2] ? "1" : "0"} zIndex={0} overflow="hidden" width="80vw" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
+                <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width="100%" height="175px" borderRadius="12px">
+                    <Text fontWeight="medium" color="dark.text" noOfLines={1} position="absolute" top="15px" left="165px" fontSize="20px">Aharen-san wa Hakarenai</Text>
 
-                    <Text color="dark.text" position="absolute" top="60px" left="165px" fontSize="14px">
+                    <Text color="dark.text" noOfLines={3} position="absolute" top="60px" left="165px" fontSize="14px">
                         Daily life of the short and quiet Reina Aharen and Raidou who sits next to her. Aharen is not so good at gauging the distance between people. One day, when Raidou picked up the eraser that Aharen had dropped, the distance between them suddenly became uncomfortably close.
                     </Text>
 

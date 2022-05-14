@@ -2,16 +2,16 @@ import { Box, Button, Stack } from "@chakra-ui/react"
 import { useState } from "react";
 
 function HomeTypeButtons(){
-    const [newEps, setNewEps] = useState(true);
-    const [followed, setFollowed] = useState(false);
-    const [recent, setRecent] = useState(false);
-    const [popular, setPopular] = useState(false);
+    // const [newEps, setNewEps] = useState(false);
+    // const [followed, setFollowed] = useState(false);
+    // const [recent, setRecent] = useState(false);
+    const [popular, setPopular] = useState(true);
     const [movie, setMovie] = useState(false);
     
     return (
         <Box key="typeButton" cursor="pointer">
             <Stack position="absolute" direction="row" spacing={4} align="center" top="300px" left="70px">
-                <Button _focus={{ bg: "dark.buttonfocus" }} onClick={() => {
+                {/* <Button _focus={{ bg: "dark.buttonfocus" }} onClick={() => {
                         setNewEps(true);
                         setFollowed(false);
                         setRecent(false);
@@ -28,7 +28,7 @@ function HomeTypeButtons(){
                         setFollowed(false);
                         setRecent(true);
                         setPopular(false);
-                        setMovie(false);}} id="recent" isActive={recent} _active={{ bg: "dark.pink", color: "white" }} height="40px" _hover={{ background: "dark.buttonhoverbackground", color: "white" }} style={{ transition: "0.2s" }} width="80px" background="dark.buttonbackground" color="dark.text" fontSize="14px" fontWeight="400">Recent</Button>
+                        setMovie(false);}} id="recent" isActive={recent} _active={{ bg: "dark.pink", color: "white" }} height="40px" _hover={{ background: "dark.buttonhoverbackground", color: "white" }} style={{ transition: "0.2s" }} width="80px" background="dark.buttonbackground" color="dark.text" fontSize="14px" fontWeight="400">Recent</Button> */}
                 <Button _focus={{ bg: "dark.buttonfocus" }} onClick={() => {
                         setNewEps(false);
                         setFollowed(false);
