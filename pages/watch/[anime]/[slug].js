@@ -7,11 +7,26 @@ import { IoFolderOpenSharp } from "react-icons/io5";
 import Head from "next/head";
 import { useState, useEffect } from "react";
 
+
 function MyApp({ details, episodes }){
     const router = useRouter()
     const { asPath } = useRouter();
     const [boxWidth, setBoxWidth] = useState(0);
     const [boxOpacity, setBoxOpacity] = useState(0);
+
+    // const options = {
+    //     url: 'https://github.com/jshemas/openGraphScraper',
+    //     customMetaTags: [{
+    //         multiple: false, // is there more than one of these tags on a page (normally this is false)
+    //         property: 'hostname', // meta tag name/property attribute
+    //         fieldName: 'hostnameMetaTag', // name of the result variable
+    //     }],
+    // };
+    // ogs(options)
+    //     .then((data) => {
+    //         const { error, result, response } = data;
+    //         console.log('hostnameMetaTag:', result.hostnameMetaTag); // hostnameMetaTag: github.com
+    // })
 
     setTimeout(function(){
         setBoxWidth(window.innerWidth / 3.4);
@@ -31,6 +46,7 @@ function MyApp({ details, episodes }){
         const searchedAnime = decodeURI(asPath.split("/")[2]);
         const selectedEpisode = asPath.split("/")[3];
         const episodeLinks = episodeData[episodeData.length-selectedEpisode];
+        
     
         let anime = searchedAnime.replace("-", " ").split(" ");
     
@@ -59,7 +75,7 @@ function MyApp({ details, episodes }){
         return (
             <div>
                 <Head>
-                    <title>{titleAnime.replace("-", "")} Episode {selectedEpisode}</title>
+                    <title>{titleAnime.replace("-", "")} - Episode {selectedEpisode}</title>
                     <meta charset="UTF-8"/>
                     <meta property="og:title" content={`${titleAnime.replace("-", "")} Episode ${selectedEpisode}`}/>
                     <meta name="twitter:title" content={`${titleAnime.replace("-", "")} Episode ${selectedEpisode}`}/>
