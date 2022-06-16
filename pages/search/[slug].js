@@ -47,7 +47,7 @@ function MyApp({ data }){
 }
 
 export async function getServerSideProps(context){
-    const res = await fetch(`https://backend-flake-anime.herokuapp.com/search?q=${context.params.slug}`)
+    const res = await fetch(`https://flake-anime-backend-server-two.herokuapp.com/search?q=${context.params.slug}`)
     const newData = await res.text()
     const data = [newData]
 

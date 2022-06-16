@@ -131,8 +131,8 @@ function MyApp({ details, episodes }){
 //<Tag background="#494D5A" color="white" height="30px" borderRadius="25px" fontWeight="regular">{genres[genre]}</Tag>
 
 export async function getServerSideProps(context){
-    const res = await fetch(`https://backend-flake-anime.herokuapp.com/detail?gogo_id=${context.params.anime}`)
-    const resEpisodes = await fetch(`https://backend-flake-anime.herokuapp.com/get_episodes?gogo_id=${context.params.anime}`)
+    const res = await fetch(`https://flake-anime-backend-server-two.herokuapp.com/detail?gogo_id=${context.params.anime}`)
+    const resEpisodes = await fetch(`https://flake-anime-backend-server-two.herokuapp.com/get_episodes?gogo_id=${context.params.anime}`)
     const details = await res.text()
     const episodes = await resEpisodes.text()
 
