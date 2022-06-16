@@ -13,7 +13,6 @@ function MyApp({ details, episodes }){
     const { asPath } = useRouter();
     const [boxWidth, setBoxWidth] = useState(0);
     const [boxOpacity, setBoxOpacity] = useState(0);
-    const ogs = require("open-graph-scraper");
 
     // const options = {
     //     url: 'https://github.com/jshemas/openGraphScraper',
