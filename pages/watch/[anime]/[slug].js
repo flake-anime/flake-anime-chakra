@@ -6,14 +6,15 @@ import { useRouter } from "next/router";
 import { IoFolderOpenSharp } from "react-icons/io5";
 import Head from "next/head";
 import { useState, useEffect } from "react";
+import ogs from "open-graph-scraper";
+
 
 function MyApp({ details, episodes }){
     const router = useRouter()
     const { asPath } = useRouter();
     const [boxWidth, setBoxWidth] = useState(0);
     const [boxOpacity, setBoxOpacity] = useState(0);
-    const ogs = require('open-graph-scraper');
-
+    
     // const options = {
     //     url: 'https://github.com/jshemas/openGraphScraper',
     //     customMetaTags: [{
