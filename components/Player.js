@@ -41,7 +41,7 @@ function Player({ width, height, episodeLink, trailerValid }){
         // width="1000px" height="562.5px"
         <Box position="relative" borderRadius={5} overflow="hidden" width={iframeWidth} height="562.5px">
             {/* <iframe width="100%" height="100%" position="absolute" border="none" allowFullScreen src={"https://proxy-server-flake-anime.herokuapp.com/player?player_link=" + episodeLink}></iframe> */}
-            <iframe border="0" alignSelf="center" position="absolute" top="0px" bottom="0px" left="0px" right="0px" height="100%" width="100%" allowFullScreen src={"https://flake-anime-proxy-server-two.herokuapp.com/player?player_link=" + episodeLink}></iframe>
+            <iframe border="0" alignself="center" position="absolute" top="0px" bottom="0px" left="0px" right="0px" height="100%" width="100%" allowFullScreen src={"https://flake-anime-proxy-server-two.herokuapp.com/player?player_link=" + episodeLink}></iframe>
         </Box>
     )
 }

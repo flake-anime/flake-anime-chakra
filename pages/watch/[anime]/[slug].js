@@ -46,6 +46,8 @@ function MyApp({ details, episodes }){
         const searchedAnime = decodeURI(asPath.split("/")[2]);
         const selectedEpisode = asPath.split("/")[3];
         const episodeLinks = episodeData[episodeData.length-selectedEpisode];
+
+        console.log("a")
         
     
         let anime = searchedAnime.replace("-", " ").split(" ");
