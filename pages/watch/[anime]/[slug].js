@@ -82,7 +82,7 @@ function MyApp({ details, episodes }){
                     <meta name="description" content={data["plot_summary"]}/>
                     <meta name="twitter:description" content={data["plot_summary"]}/>
                     <meta name="twitter:card" content="summary_large_image"/>
-                    <meta name="twitter:image" content={data["cover"]}/>
+                    {/* <meta name="twitter:image" content={data["cover"]}/> */}
                     <meta name="twitter:site" content="@discord"/>
                     <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
