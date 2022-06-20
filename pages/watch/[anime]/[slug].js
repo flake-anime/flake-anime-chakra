@@ -166,7 +166,7 @@ function MyApp({ details, episodes }){
                                         <Text color="#ffffff" noOfLines={1} textTransform="capitalize" position="absolute" top="14px" left="52px" fontWeight="500">{data["anime_name"]}</Text>
                                         <Text color="#ffffff" paddingRight="15px" fontSize="12px" noOfLines={5} textTransform="capitalize" position="absolute" top="50px" left="15px" fontWeight="regular">{data["plot_summary"]}</Text>
                                     
-                                        <Box position="relative" height="200px" borderRadius="8px" right="10px" top="0px" overflow="hidden">
+                                        <Box position="relative" height="200px" width="70vw" borderRadius="8px" right="10px" top="0px" overflow="hidden">
                                             <SimpleGrid position="absolute" display="flex" justifyContent="center" bottom="15px" left="15px" color="white" columns={1} rows={1}>
                                                 {Object.keys(genres).map((genre) => (
                                                     <Tag key={genre} position="relative" background="dark.pink" color="white" height="30px" borderRadius="25px" marginLeft="10px" paddingLeft="20px" paddingRight="20px" fontWeight="regular"><Text isTruncated>{genres[genre].trim()}</Text></Tag>
