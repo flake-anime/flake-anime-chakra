@@ -16,7 +16,7 @@ function MyApp({ data }){
         <div>
             <Head>
                 <title>Searching Results for {searchedAnime}</title>
-                <meta charset="UTF-8"/>
+                <meta charSet="UTF-8"/>
                 <meta property="og:title" content={`Showing Results for ${searchedAnime}`}/>
                 <meta name="twitter:title" content={`Showing Results for ${searchedAnime}`}/>
                 <meta property="og:type" content="website"/>

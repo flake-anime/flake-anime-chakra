@@ -11,7 +11,7 @@ function MyApp(){
     <div>
         {/* <Head>
             <title></title>
-            <meta charset="UTF-8"/>
+            <meta charSet="UTF-8"/>
             <meta property="og:title" content="Flake Anime"/>
             <meta name="twitter:title" content="Flake Anime"/>
             <meta property="og:type" content="website"/>
