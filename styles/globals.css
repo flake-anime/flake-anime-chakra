@@ -9,6 +9,17 @@ html, body {
     min-width: 100%;
     min-height: 100%;
 }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    /* this makes sure the padding and the border is included in the box sizing */
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 7px;
@@ -29,4 +40,22 @@ html, body {
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #f293c1;
+}
+
+.episodes {
+    margin-top: 0px;
+    width: 70vw;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1120px){
+    .episodes {
+        margin-top: 215px;
+        max-width: 2000px;
+    }
+
+    .details {
+        max-width: 2000px;
+    }
 }
