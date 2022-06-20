@@ -1,5 +1,4 @@
-import { Box, Center, Slider, SliderTrack, SliderFilledTrack, SliderThumb } from "@chakra-ui/react"
-import { TriangleDownIcon } from "@chakra-ui/icons"
+import { Box } from "@chakra-ui/react"
 import { useState, useEffect } from "react";
 
 

@@ -1,5 +1,5 @@
 import { Box, Image, Text, Center } from "@chakra-ui/react";
-import React, {useState} from "react";
+import React from "react";
 import { StarIcon } from "@chakra-ui/icons"
 import { useRouter } from "next/router"
 

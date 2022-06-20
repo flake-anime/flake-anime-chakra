@@ -4,7 +4,7 @@ import { TriangleDownIcon } from "@chakra-ui/icons"
 function DetailCard(){
     return (
         <Box key="detailCard" cursor="pointer" background="dark.buttonbackground" borderRadius="3px" width="225px" height="550px" left="122px" top="95px" position="absolute">
-            <Image src="https://cachecow.eu/min/mal/10/47347.jpg" borderRadius="3px 3px 0 0" height="350px" width="225px"></Image>
+            <Image alt="Cover" src="https://cachecow.eu/min/mal/10/47347.jpg" borderRadius="3px 3px 0 0" height="350px" width="225px"></Image>
             <Text fontSize="16" marginTop="5px" marginLeft="10px" color="white" fontWeight="400">Attack On Titan</Text>
             <Text fontSize="14" marginTop="0px" marginLeft="10px" color="dark.text" fontWeight="400">進撃の巨人</Text>
             <Center>
