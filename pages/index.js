@@ -6,45 +6,80 @@ import AnimeCard from "../components/AnimeCard"
 import AnimeSelection from "../components/AnimeSelection"
 import DiscordServer from "../components/DiscordServer"
 import Head from "next/head"
+import { useEffect } from "react";
 
 function MyApp(){
-  return (
-    <div>
-        <Head>
-            <title>Flake Anime</title>
-            <meta charSet="UTF-8"/>
-            <meta property="og:title" content="Flake Anime"/>
-            <meta name="twitter:title" content="Flake Anime"/>
-            <meta property="og:type" content="website"/>
-            <meta property="og:url" content="https://flake-anime.netlify.app/"/>
-            <meta name="description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about! "/>
-            <meta name="twitter:description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
-            <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
-            <meta name="twitter:site" content="@discord"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        </Head>
-        
-        <NavBar/>
-        <RandomTopAnime/>
-        <HomeTypeButtons/>
-        {/* <DiscordServer/> */}
+    // useEffect(()=> {
+    //     if (window.innerWidth <= 478){
+    //         let cards = document.getElementById("simplegrid").getElementsByTagName("div");
 
-        
-        <SimpleGrid position="absolute" top="360px" spacingX="30px" style={{ height: "50vh", width: "calc(100vw - 50px)", display: "flex", flexWrap: "wrap" }}>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-            <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-        </SimpleGrid>
-    </div>
-  )
+    //         for(let i = 0; i < cards.length; i++){
+    //             cards[i].style.transform = "scale(0.7)";
+                
+    //             // images[i].style.transform = "scale(1)";
+    //         }
+    //     } else {
+    //         let cards = document.getElementById("simplegrid").getElementsByTagName("div");
+
+    //         for(let i = 0; i < cards.length; i++){
+    //             cards[i].style.transform = "scale(1)";
+    //         }
+    //     }
+
+    //     window.addEventListener("resize", ()=> {
+    //         if (window.innerWidth <= 478){
+    //             let cards = document.getElementById("simplegrid").getElementsByTagName("div");
+
+    //             for(let i = 0; i < cards.length; i++){
+    //                 cards[i].style.transform = "scale(0.7)";
+    //             }
+    //         } else {
+    //             let cards = document.getElementById("simplegrid").getElementsByTagName("div");
+
+    //             for(let i = 0; i < cards.length; i++){
+    //                 cards[i].style.transform = "scale(1)";
+    //             }
+    //         }
+    //     });
+    // }, [])
+
+    return (
+        <div>
+            <Head>
+                <title>Flake Anime</title>
+                <meta charSet="UTF-8"/>
+                <meta property="og:title" content="Flake Anime"/>
+                <meta name="twitter:title" content="Flake Anime"/>
+                <meta property="og:type" content="website"/>
+                <meta property="og:url" content="https://flake-anime.netlify.app/"/>
+                <meta name="description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about! "/>
+                <meta name="twitter:description" content="Enjoy HD anime for completely free - Subbed & Dubbed! No ads or anything else to worry about!"/>
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
+                <meta name="twitter:site" content="@discord"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            </Head>
+            
+            <NavBar/>
+            <RandomTopAnime/>
+            <HomeTypeButtons/>
+            {/* <DiscordServer/> */}
+
+            
+            <SimpleGrid id="simplegrid" position="absolute" top="360px" spacingX="30px" style={{ height: "50vh", width: "calc(100vw - 50px)", display: "flex", flexWrap: "wrap" }}>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+            </SimpleGrid>
+        </div>
+    )
 }
 
 export default MyApp

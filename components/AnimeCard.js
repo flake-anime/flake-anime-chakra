@@ -13,7 +13,7 @@ function AnimeCard({ imgUrl, name, rating, animeID, type, totalEpisodes }){
     }
 
     return (
-        <Box key={name} onClick={clicked} id={animeID} _hover={{ background: "dark.cardhover", cursor: "pointer", transform: "scale(1.02) translate(0, -5px)"}} transition="all .2s ease-in-out" boxShadow="2xl" noOfLines={1} minWidth="200px" width="auto" borderRadius={15} minHeight="350px" left="60px" position="relative">
+        <Box key={name} onClick={clicked} className={animeID} id="animeCard" _hover={{ background: "dark.cardhover", cursor: "pointer", transform: "scale(1.02) translate(0, -5px)"}} transition="all .2s ease-in-out" boxShadow="2xl" noOfLines={1} minWidth="200px" width="auto" borderRadius={15} minHeight="350px" left="60px" position="relative">
             <Text noOfLines={1} width="174px" position="absolute" color="dark.text" fontWeight="medium" fontSize="14" bottom="55px" left="15px">{name}</Text>
             
             <StarIcon position="absolute" color="dark.pink" w={4} h={4} bottom="15px" left="15px"/>
@@ -25,8 +25,8 @@ function AnimeCard({ imgUrl, name, rating, animeID, type, totalEpisodes }){
                 <Text fontWeight="500" color="dark.text" position="absolute" bottom="13px" right="15px" fontSize="14px">{totalEpisodes} Episode</Text>
             )}
 
-            <Center marginTop="12px">
-                <Image alt={name} key={name} fallbackSrc="https://i.imgur.com/8sJVxm8.jpg" borderRadius={10} boxShadow="2xl" width="175px" height="250px" src={imgUrl}></Image>
+            <Center className="center" marginTop="12px">
+                <Image id="image" alt={name} key={name} fallbackSrc="https://i.imgur.com/8sJVxm8.jpg" borderRadius={10} boxShadow="2xl" width="175px" height="250px" src={imgUrl}></Image>
             </Center>
 
             {type == "Movies" ? (

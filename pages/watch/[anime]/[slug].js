@@ -156,7 +156,7 @@ function MyApp({ details, episodes }){
                             </GridItem>
 
                         {/* Top Box - 3.4 - right="30px" top="95px"*/}
-                            <GridItem className="details" pl="0" left="8px" top="0px" position="absolute" background="dark.buttonbackground" width="70vw" minWidth="200px" borderRadius="8px" height="200px" area={"details"}>
+                            <GridItem className="details" pl="0" left="8px" top="0px" position="absolute" background="dark.buttonbackground" width="80vw" minWidth="200px" borderRadius="8px" height="200px" area={"details"}>
                                 <Box position="relative" width={boxWidth} minWidth="300px" opacity={boxOpacity} height="200px" background="dark.buttonbackground" borderRadius="8px">
                                     <Box>
                                         <Box padding="15px" position="absolute">
@@ -164,7 +164,7 @@ function MyApp({ details, episodes }){
                                         </Box>
                         
                                         <Text color="#ffffff" noOfLines={1} textTransform="capitalize" position="absolute" top="14px" left="52px" fontWeight="500">{data["anime_name"]}</Text>
-                                        <Text color="#ffffff" paddingRight="15px" fontSize="12px" noOfLines={5} textTransform="capitalize" position="absolute" top="50px" left="15px" fontWeight="regular">{data["plot_summary"]}</Text>
+                                        <Text color="#ffffff" paddingRight="15px" fontSize="12px" noOfLines={5} width="70vw" textTransform="capitalize" position="absolute" top="50px" left="15px" fontWeight="regular">{data["plot_summary"]}</Text>
                                     
                                         <Box position="relative" height="200px" width="70vw" borderRadius="8px" right="10px" top="0px" overflow="hidden">
                                             <SimpleGrid position="absolute" display="flex" justifyContent="center" bottom="15px" left="15px" color="white" columns={1} rows={1}>
@@ -185,7 +185,7 @@ function MyApp({ details, episodes }){
                 
                                 <Text paddingRight="15px" color="#ffffff" noOfLines={1} textTransform="capitalize" position="absolute" top="14px" left="42px" fontWeight="500">Episodes</Text>
                             
-                                <SimpleGrid left="15px" top="50px" columns={[5, 7, 9]} position="absolute" spacingX={["17px"]} spacingY="10px">
+                                <SimpleGrid left="15px" top="50px" style={{ paddingRight: "20px", display: "flex", flexWrap: "wrap" }} position="absolute" spacingX={["17px"]} spacingY="10px">
                                     {Object.keys(episodeData).map((episodeNum) => (
                                         <Button key={parseInt(episodeNum)+1} className={parseInt(episodeNum)+1} _focus={{ bg: "dark.buttonfocus" }} isActive={selectedEpisode == parseInt(episodeNum)+1 ? true : false} onClick={(e) => {showDifEpisode(e)}} _active={{ bg: "dark.pink", color: "white" }} _hover={{ background: "dark.buttonfocus", color: "white" }} background="dark.buttonhoverbackground" color="white" width="40px" height="35px">{parseInt(episodeNum)+1}</Button>
                                     ))}
