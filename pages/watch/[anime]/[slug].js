@@ -85,7 +85,7 @@ function MyApp({ details, episodes }){
                     {/* <meta name="twitter:image" content={data["cover"]}/> */}
                     <meta name="twitter:site" content="@discord"/>
                     <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=0.7"/>
                 </Head>
     
                 <NavBar/>

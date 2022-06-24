@@ -26,7 +26,7 @@ function MyApp({ data }){
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
                 <meta name="twitter:site" content="@discord"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="viewport" content="width=device-width, initial-scale=0.55"/>
             </Head>
         
             <NavBar/>
@@ -37,7 +37,7 @@ function MyApp({ data }){
                 </Center>
             </Box>
 
-            <SimpleGrid position="absolute" top="145px" columns={[1, 2, 3, 5, 6, 7]} spacingX="15px">
+            <SimpleGrid position="absolute" top="145px" style={{ height: "100vh", width: "100vw", display: "flex", flexWrap: "wrap" }} spacingX="15px">
                 {Object.keys(animes).map((anime) => (
                     <AnimeCard key={anime} totalEpisodes={animes[anime]["total_episodes"]} type={animes[anime]["type"]} name={animes[anime]["anime_name"]} imgUrl={animes[anime]["cover"]} animeID={animes[anime]["gogo_id"]} rating={ typeof animes[anime]["rating"] == "undefined" ? "???" : animes[anime]["score"] }/>
                 ))}

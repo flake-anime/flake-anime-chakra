@@ -103,41 +103,41 @@ function NavBar() {
         </SimpleGrid>
 
         <form onSubmit={search}>
-          <Input
-            focusBorderColor="dark.pink"
-            autoComplete="off"
-            id="textbox"
-            name="textbox"
-            style={{ textTransform: "capitalize" }}
-            placeholder="What would you like to watch today?"
-            fontSize="14px"
-            _hover={{ bg: "dark.buttonhoverbackground" }}
-            variant="filled"
-            color="white"
-            left="120px"
-            bgColor="dark.buttonbackground"
-            height="45px"
-            width="50vw"
-            maxWidth="350px"
-            position="absolute"
-            top="25px"
-            display="inline-block"
-          />
-          <IconButton
-            _focus={{ bg: "dark.buttonfocus" }}
-            _hover={{ bg: "dark.navbarbuttonhover" }}
-            style={{ transition: "0.2s" }}
-            type="submit"
-            aria-label="search"
-            bgColor="dark.pink"
-            color="white"
-            height="45px"
-            width="45px"
-            top="25px"
-            left="480px"
-            position="absolute"
-            icon={<SearchIcon />}
-          />
+            <Input
+                focusBorderColor="dark.pink"
+                autoComplete="off"
+                id="textbox"
+                name="textbox"
+                style={{ textTransform: "capitalize" }}
+                placeholder="What would you like to watch today?"
+                fontSize="14px"
+                _hover={{ bg: "dark.buttonhoverbackground" }}
+                variant="filled"
+                color="white"
+                left="120px"
+                bgColor="dark.buttonbackground"
+                height="45px"
+                width="50vw"
+                maxWidth="350px"
+                position="absolute"
+                top="25px"
+                display="inline-block"
+            />
+            <IconButton
+                _focus={{ bg: "dark.buttonfocus" }}
+                _hover={{ bg: "dark.navbarbuttonhover" }}
+                style={{ transition: "0.2s" }}
+                type="submit"
+                aria-label="search"
+                bgColor="dark.pink"
+                color="white"
+                height="45px"
+                width="45px"
+                top="25px"
+                left="480px"
+                position="absolute"
+                icon={<SearchIcon />}
+            />
         </form>
       </Box>
     </Box>

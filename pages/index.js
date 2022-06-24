@@ -6,7 +6,7 @@ import AnimeCard from "../components/AnimeCard"
 import AnimeSelection from "../components/AnimeSelection"
 import DiscordServer from "../components/DiscordServer"
 import Head from "next/head"
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function MyApp(){
     // useEffect(()=> {
@@ -42,6 +42,7 @@ function MyApp(){
     //         }
     //     });
     // }, [])
+    
 
     return (
         <div>
@@ -57,7 +58,7 @@ function MyApp(){
                 <meta name="twitter:card" content="summary_large_image"/>
                 <meta name="twitter:image" content="https://i.imgur.com/MexfEp6.png"/>
                 <meta name="twitter:site" content="@discord"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+                <meta name="viewport" content="width=device-width, initial-scale=0.55"></meta>
             </Head>
             
             <NavBar/>
