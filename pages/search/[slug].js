@@ -37,7 +37,7 @@ function MyApp({ data }){
                 </Center>
             </Box>
 
-            <SimpleGrid position="absolute" top="145px" style={{ height: "100vh", width: "100vw", display: "flex", flexWrap: "wrap" }} spacingX="15px">
+            <SimpleGrid position="absolute" top="145px" style={{ height: "50vh", width: "100vw", display: "flex", flexWrap: "wrap" }} spacingX="15px">
                 {Object.keys(animes).map((anime) => (
                     <AnimeCard key={anime} totalEpisodes={animes[anime]["total_episodes"]} type={animes[anime]["type"]} name={animes[anime]["anime_name"]} imgUrl={animes[anime]["cover"]} animeID={animes[anime]["gogo_id"]} rating={ typeof animes[anime]["rating"] == "undefined" ? "???" : animes[anime]["score"] }/>
                 ))}
