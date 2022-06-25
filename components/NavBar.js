@@ -11,7 +11,6 @@ import {
 import { SearchIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import { Redirect } from 'react-router-dom';
 
 function NavBar() {
   const router = useRouter();
