@@ -9,11 +9,14 @@ function RandomTopAnime(){
 
     return (
         <Box key={topAnimes[0]} className="className" cursor="pointer">
-            <Box opacity={showingCard == topAnimes[0] ? "1" : "0"} zIndex={showingCard == 0 ? "1" : "0"} overflow="hidden" width="80vw" borderRadius={12} marginTop="95px" marginLeft="70px" height={[175]} position="absolute">
+            <Box opacity={showingCard == topAnimes[0] ? "1" : "0"} zIndex={showingCard == 0 ? "1" : "0"} overflow="hidden" width="80vw" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute" onClick={(event) => {
+                event.preventDefault();
+                window.location.replace(`https://flake-anime.netlify.app/watch/maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e/1`)
+            }}>
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.2s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width="100%" height="175px" borderRadius="12px">
                     <Text fontWeight="medium" color="dark.text" noOfLines={1} position="absolute" top="15px" left="165px" fontSize="20px">Banish from the Hero&apos;s Party</Text>
                 {/* Font Size: 14 */}
-                    <Text color="dark.text" noOfLines={3} position="absolute" top="60px" left="165px" fontSize="14px" paddingLeft="10px">
+                    <Text color="dark.text" noOfLines={3} position="absolute" top="60px" left="165px" fontSize="14px">
                         Miko is a typical high school student whose life turns upside down when she suddenly starts to see gruesome and hideous monsters. Despite being completely terrified, Miko carries on with her daily life, pretending not to notice the horrors that surround her.
                     </Text>
 
@@ -47,7 +50,10 @@ function RandomTopAnime(){
             </Box>
 
 
-            <Box key={topAnimes[1]} opacity={showingCard == topAnimes[1] ? "1" : "0"} zIndex={0} overflow="hidden" width="80vw" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
+            <Box key={topAnimes[1]} opacity={showingCard == topAnimes[1] ? "1" : "0"} zIndex={0} overflow="hidden" width="80vw" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute" onClick={(event) => {
+                event.preventDefault();
+                window.location.replace(`https://flake-anime.netlify.app/watch/tate-no-yuusha-no-nariagari-2nd-season/1`)
+            }}>
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width="100%" height="175px" borderRadius="12px">
                     <Text fontWeight="medium" color="dark.text" noOfLines={1} position="absolute" top="15px" left="165px" fontSize="20px">Tate no Yuusha no Nariagari Season 2</Text>
 
@@ -85,7 +91,10 @@ function RandomTopAnime(){
             </Box>
 
 
-            <Box key={topAnimes[2]} opacity={showingCard == topAnimes[2] ? "1" : "0"} zIndex={0} overflow="hidden" width="80vw" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute">
+            <Box key={topAnimes[2]} opacity={showingCard == topAnimes[2] ? "1" : "0"} zIndex={0} overflow="hidden" width="80vw" borderRadius={12} marginTop="95px" marginLeft="70px" height="175px" position="absolute" onClick={(event) => {
+                event.preventDefault();
+                window.location.replace(`https://flake-anime.netlify.app/watch/aharen-san-wa-hakarenai/1`)
+            }}>
                 <Box className="0" position="absolute" overflow="hidden" onMouseEnter={() => {setHovered(0.2)}} onMouseLeave={() => {setHovered(0)}} _hover={{  background: "dark.buttonhoverbackground" }} style={{ transition: "0.4s ease-in-out"}} top="0px" left="0px" bg="dark.buttonbackground" width="100%" height="175px" borderRadius="12px">
                     <Text fontWeight="medium" color="dark.text" noOfLines={1} position="absolute" top="15px" left="165px" fontSize="20px">Aharen-san wa Hakarenai</Text>
 

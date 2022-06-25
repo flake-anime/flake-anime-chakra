@@ -11,18 +11,23 @@ import {
 import { SearchIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import { Redirect } from 'react-router-dom';
 
 function NavBar() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
-  const search = async (event) => {
-    event.preventDefault();
-    setLoading(true);
+//   const search = async (event) => {
+//     if(event.target.textbox.value.trim() == ""){
+//         event.preventDefault();
+//     } else {
+//         // setLoading(true);
 
-    router.push(`/search/${event.target.textbox.value.replace(/ /g, "-")}`);
-    setLoading(false);
-  };
+//         // router.push(`/search/${event.target.textbox.value.replace(/ /g, "-")}`);
+//         return <Redirect to={`localhost:3000/search/${event.target.textbox.value.replace(/ /g, "-")}`}/>
+//         // setLoading(false);
+//     }
+//   };
 
   return (
     <Box key="navbar">
@@ -102,7 +107,11 @@ function NavBar() {
           />
         </SimpleGrid>
 
-        <form onSubmit={search}>
+        <form onSubmit={(event) => {
+                event.preventDefault();
+                window.location.replace(`http://flake-anime.netlify.app/search/${event.target.textbox.value.replace(/ /g, "-")}`)
+            }
+        }>
             <Input
                 focusBorderColor="dark.pink"
                 autoComplete="off"
