@@ -35,12 +35,12 @@ function HomeTypeButtons(){
                         setRecent(false);
                         setPopular(true);
                         setMovie(false);}} id="popular" isActive={popular} _active={{ bg: "dark.pink", color: "white" }} height="40px" _hover={{ background: "dark.buttonhoverbackground", color: "white" }} style={{ transition: "0.2s" }} width="80px" background="dark.buttonbackground" color="dark.text" fontSize="14px" fontWeight="400">Popular</Button>
-                <Button _focus={{ bg: "dark.buttonfocus" }} onClick={() => {
+                {/* <Button _focus={{ bg: "dark.buttonfocus" }} onClick={() => {
                         setNewEps(false);
                         setFollowed(false);
                         setRecent(false);
                         setPopular(false);
-                        setMovie(true);}} id="movie" isActive={movie} _active={{ bg: "dark.pink", color: "white" }} height="40px" _hover={{ background: "dark.buttonhoverbackground", color: "white" }} style={{ transition: "0.2s" }} width="80px" background="dark.buttonbackground" color="dark.text" fontSize="14px" fontWeight="400">Movie</Button>
+                        setMovie(true);}} id="movie" isActive={movie} _active={{ bg: "dark.pink", color: "white" }} height="40px" _hover={{ background: "dark.buttonhoverbackground", color: "white" }} style={{ transition: "0.2s" }} width="80px" background="dark.buttonbackground" color="dark.text" fontSize="14px" fontWeight="400">Movie</Button> */}
             </Stack>
         </Box>
     )
