@@ -24,7 +24,7 @@ function RandomTopAnime(){
                     <Text fontWeight="500" color="dark.text" position="absolute" bottom="13px" left="190px" fontSize="14px">6.95</Text>
 
                     {/* onClick={(e) => {e.target.parentNode}} */}
-                    <ChevronLeftIcon onClick={(e) => {
+                    <ChevronLeftIcon zIndex={100} onClick={(e) => {
 
                         // e.target.parentNode.className[0] == "0" ? e.target.parentNode.style.left="-100%" : console.log("Error clicking button");
 
@@ -34,7 +34,7 @@ function RandomTopAnime(){
                         }, 400)
 
                     }} _hover={{ color: "dark.pink" }} style={{ transition: "0.2s" }} position="absolute" color="dark.text" w={6} h={6} bottom="15px" right="40px"/>
-                    <ChevronRightIcon onClick={(e) => {
+                    <ChevronRightIcon zIndex={100} onClick={(e) => {
 
                         // e.target.parentNode.className[0] == "0" ? e.target.parentNode.style.left="100%" : console.log("Error clicking button");
 
@@ -65,7 +65,7 @@ function RandomTopAnime(){
                     <Text fontWeight="500" color="dark.text" position="absolute" bottom="13px" left="190px" fontSize="14px">6.95</Text>
 
                     {/* onClick={(e) => {e.target.parentNode}} */}
-                    <ChevronLeftIcon onClick={(e) => {
+                    <ChevronLeftIcon zIndex={100} onClick={(e) => {
 
                         // e.target.parentNode.className[0] == "0" ? e.target.parentNode.style.left="-100%" : console.log("Error clicking button");
 
@@ -75,7 +75,7 @@ function RandomTopAnime(){
                         }, 100)
 
                     }} _hover={{ color: "dark.pink" }} style={{ transition: "0.2s" }} position="absolute" color="dark.text" w={6} h={6} bottom="15px" right="40px"/>
-                    <ChevronRightIcon onClick={(e) => {
+                    <ChevronRightIcon zIndex={100} onClick={(e) => {
 
                         // e.target.parentNode.className[0] == "0" ? e.target.parentNode.style.left="100%" : console.log("Error clicking button");
                         
@@ -106,7 +106,7 @@ function RandomTopAnime(){
                     <Text fontWeight="500" color="dark.text" position="absolute" bottom="13px" left="190px" fontSize="14px">6.95</Text>
 
                     {/* onClick={(e) => {e.target.parentNode}} */}
-                    <ChevronLeftIcon onClick={(e) => {
+                    <ChevronLeftIcon zIndex={100} onClick={(e) => {
 
                         // e.target.parentNode.className[0] == "0" ? e.target.parentNode.style.left="-100%" : console.log("Error clicking button");
 
@@ -116,7 +116,7 @@ function RandomTopAnime(){
                         }, 100)
 
                     }} _hover={{ color: "dark.pink" }} style={{ transition: "0.2s" }} position="absolute" color="dark.text" w={6} h={6} bottom="15px" right="40px"/>
-                    <ChevronRightIcon onClick={(e) => {
+                    <ChevronRightIcon zIndex={100} onClick={(e) => {
 
                         // e.target.parentNode.className[0] == "0" ? e.target.parentNode.style.left="100%" : console.log("Error clicking button");
                         
