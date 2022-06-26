@@ -68,16 +68,18 @@ function MyApp(){
 
             
             <SimpleGrid id="simplegrid" position="absolute" top="360px" spacingX="30px" style={{ height: "50vh", width: "calc(100vw - 50px)", display: "flex", flexWrap: "wrap" }}>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
-                <AnimeCard imgUrl="https://cdn.myanimelist.net/images/anime/1126/108573.jpg?s=16fce010e7503040b413bb3d924279e8" name="The Misfit of Demon King Academy" rating="6.95" animeID="maou-gakuin-no-futekigousha-shijou-saikyou-no-maou-no-shiso-tensei-shite-shison-tachi-no-gakkou-e"/>
+                <AnimeCard rating="Soon" totalEpisodes="100" imgUrl="https://gogocdn.net/images/anime/One-piece.jpg" name="One Piece" animeID="one-piece"/>
+                <AnimeCard rating="Soon" totalEpisodes="6" imgUrl="https://gogocdn.net/cover/spy-x-family.png" name="Spy X Family" animeID="spy-x-family"/>
+                <AnimeCard rating="Soon" totalEpisodes="100" imgUrl="https://gogocdn.net/cover/boruto-naruto-next-generations.png" name="Boruto: Naruto Next Generations" animeID="boruto-naruto-next-generations"/>
+                <AnimeCard rating="Soon" totalEpisodes="3" imgUrl="https://gogocdn.net/cover/tate-no-yuusha-no-nariagari-2nd-season.png" name="Tate No Yuusha Np Nariagrai 2nd Season" animeID="tate-no-yuusha-no-nariagari-2nd-season"/>
+                <AnimeCard rating="Soon" totalEpisodes="2" imgUrl="https://gogocdn.net/cover/kaguya-sama-wa-kokurasetai-ultra-romantic.png" name="Kaguya-sama wa Kokurasetai: Ultra Romantic" animeID="kaguya-sama-wa-kokurasetai-ultra-romantic"/>
+                <AnimeCard rating="Soon" totalEpisodes="2" imgUrl="https://gogocdn.net/cover/kawaii-dake-ja-nai-shikimori-san.png" name="Kawaii dake ja Nai Shikimori-san" animeID="kawaii-dake-ja-nai-shikimori-san"/>
+                <AnimeCard rating="Soon" totalEpisodes="100" imgUrl="https://gogocdn.net/images/anime/detective-conan.jpg" name="Detective Conan" animeID="detective-conan"/>
+                <AnimeCard rating="Soon" totalEpisodes="2" imgUrl="https://gogocdn.net/cover/komi-san-wa-comyushou-desu-2nd-season.png" name="Komi-san wa, Comyushou desu. 2nd Season" animeID="komi-san-wa-comyushou-desu-2nd-season"/>
+                <AnimeCard rating="Soon" totalEpisodes="3" imgUrl="https://gogocdn.net/cover/aharen-san-wa-hakarenai.png" name="Aharen-san wa Hakarenai" animeID="aharen-san-wa-hakarenai"/>
+                <AnimeCard rating="Soon" totalEpisodes="2" imgUrl="https://gogocdn.net/cover/summertime-render.png" name="Summertime Render" animeID="summertime-render"/>
+                <AnimeCard rating="Soon" totalEpisodes="3" imgUrl="https://gogocdn.net/cover/tomodachi-game.png" name="Tomodachi Game" animeID="tomodachi-game"/>
+                <AnimeCard rating="Soon" totalEpisodes="2" imgUrl="https://gogocdn.net/cover/date-a-live-iv.png" name="Date A Live IV" animeID="date-a-live-iv"/>
             </SimpleGrid>
         </div>
     )

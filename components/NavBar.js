@@ -61,7 +61,6 @@ function NavBar() {
         {/* Star */}
 
         <SimpleGrid
-          mixBlendMode="lighten"
           columns={1}
           top="40px"
           spacingY="50px"
@@ -73,36 +72,42 @@ function NavBar() {
             cursor="pointer"
             height="15px"
             src="https://i.imgur.com/4T35GJ5.png"
+            style={{ cursor: "not-allowed" }}
           />
           <Image
             alt="shuffle"
             cursor="pointer"
             height="15px"
             src="https://i.imgur.com/YpAcgzm.png"
+            style={{ cursor: "not-allowed" }}
           />
           <Image
             alt="heart"
             cursor="pointer"
             height="15px"
             src="https://i.imgur.com/wTcnhew.png"
+            style={{ cursor: "not-allowed" }}
           />
           <Image
             alt="message"
             cursor="pointer"
             height="15px"
             src="https://i.imgur.com/50JH9SG.png"
+            style={{ cursor: "not-allowed" }}
           />
           <Image
             alt="bell"
             cursor="pointer"
             height="15px"
             src="https://i.imgur.com/Io9ymdK.png"
+            style={{ cursor: "not-allowed" }}
           />
           <Image
             alt="star"
             cursor="pointer"
             height="15px"
             src="https://i.imgur.com/6rke9dV.png"
+            style={{ cursor: "not-allowed" }}
           />
         </SimpleGrid>
 
