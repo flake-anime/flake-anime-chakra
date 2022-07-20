@@ -1,4 +1,4 @@
-import { SimpleGrid, Box } from "@chakra-ui/react"
+import { SimpleGrid, Image, Box } from "@chakra-ui/react"
 import NavBar from "../components/NavBar"
 import RandomTopAnime from "../components/RandomTopAnime"
 import HomeTypeButtons from "../components/HomeTypeButtons"
@@ -61,6 +61,10 @@ function MyApp(){
                 <meta name="viewport" content="width=device-width, initial-scale=0.55"></meta>
             </Head>
             
+            {/* <Image className="background" src="https://i.imgur.com/23Yxiwx.jpg"/> */}
+            {/* <Image className="background" src="https://wallpaperaccess.com/full/6319352.jpg"/> */}
+            <Image className="background" src="https://www.fanbolt.com/storage/2021/08/anime-iphone-wallpaper-800x500.jpg"/>
+
             <NavBar/>
             <RandomTopAnime/>
             <HomeTypeButtons/>

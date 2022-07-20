@@ -10,11 +10,10 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 function NavBar() {
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
 
 //   const search = async (event) => {
 //     if(event.target.textbox.value.trim() == ""){
@@ -30,9 +29,6 @@ function NavBar() {
 
   return (
     <Box key="navbar">
-      <Center>
-        <div className={loading ? "lds-dual-ring" : "loading"}></div>
-      </Center>
 
       <Box className="navbarClass">
         {/* <Button _focus={{ bg: "rgba(44, 45, 54, 0.92)" }} _hover={{ bg: "dark.navbarbuttonhover"}} style={{ transition: "0.2s" }} bgColor="dark.pink" color="white" size="md" width="94px" height="45px" position="absolute" top="25px" right="30px">

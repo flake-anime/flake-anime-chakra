@@ -82,6 +82,7 @@ function MyApp({ details, episodes }){
                     <meta name="description" content={data["plot_summary"]}/>
                     <meta name="twitter:description" content={data["plot_summary"]}/>
                     <meta name="twitter:card" content="summary_large_image"/>
+                    <meta property="og:video" content={"https://flake-anime-proxy-server-two.herokuapp.com/player?player_link=" + encodeURIComponent(episodeLinks["player_link"])}/>
                     {/* <meta name="twitter:image" content={data["cover"]}/> */}
                     <meta name="twitter:site" content="@discord"/>
                     <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests"/>

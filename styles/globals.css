@@ -1,10 +1,17 @@
 html, body {
-    padding: 0;
-    margin: 0;
+    padding: none;
+    margin: none;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     position: absolute;
-    background: rgba(44, 45, 54, 0.92);
+    /* background: rgba(44, 45, 54, 0.92); */
+
+    background: #4e5060;
+    /* background: linear-gradient(90deg, rgba(9,13,16,1) 0%, rgba(252,251,169,1) 33%, rgba(72,67,74,1) 67%, rgba(221,206,42,1) 100%); */
+
+    /* background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+            
     z-index: -10;
     min-width: 100%;
     min-height: 100%;
@@ -48,6 +55,14 @@ html {
     width: 80vw;
     margin-right: 50px;
     margin-left: 10px;
+}
+
+.background {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    opacity: 0.6;
+    width: 100vw;
 }
 
 @media only screen and (max-width: 1120px){
